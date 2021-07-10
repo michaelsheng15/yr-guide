@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <Container className='footer-container'>
       <Row>
-        <p className="text">Created by Michael Sheng. &copy; 2021</p>
+        <p className="p">Developed from scratch by Michael Sheng. &copy; 2021</p>
       </Row>
       <Row>
         <Col>

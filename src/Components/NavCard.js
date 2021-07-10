@@ -1,32 +1,45 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./NavCard.css";
+import { Link } from "react-router-dom";
 
 const NavCard = () => {
   return (
-    <Container>
+    <Container className='nav-container'>
       <Row>
-        <p className="large">ITS Service Desk 🏡</p>
+        <Link to="/home" style={{ textDecoration: "none" }}>
+          <p className="large">ITS Service Desk 🏡</p>
+        </Link>
       </Row>
       <Row>
         <Col>
-          <p className="text">Guides 📚</p>
+          <Link to="/guides" style={{ textDecoration: "none" }}>
+            <p className="text">Guides 📚</p>
+          </Link>
         </Col>
 
         <Col>
-          <p className="text">YR Apps 🛠</p>
+          <Link to="/yr-apps" style={{ textDecoration: "none" }}>
+            <p className="text">YR Apps 🛠</p>
+          </Link>
         </Col>
 
         <Col>
-          <p className="text">Tips 🚀</p>
+          <Link to="/tips" style={{ textDecoration: "none" }}>
+            <p className="text">Tips 🚀</p>
+          </Link>
         </Col>
 
         <Col>
-          <p className="text">Resources 🧰</p>
+          <Link to="/resources" style={{ textDecoration: "none" }}>
+            <p className="text">Resources 🧰</p>
+          </Link>
         </Col>
 
         <Col>
-          <p className="text">Contact 📞</p>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
+            <p className="text">Contact 📞</p>
+          </Link>
         </Col>
       </Row>
     </Container>
