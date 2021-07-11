@@ -1,19 +1,81 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./Footer.css";
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillMail } from "react-icons/ai";
+import { AiFillFileMarkdown } from "react-icons/ai";
+import { IconContext } from "react-icons";
 
 const Footer = () => {
   return (
-    <Container className='footer-container'>
+    <Container className="footer-container">
       <Row>
-        <p className="p">Developed from scratch by Michael Sheng. &copy; 2021</p>
-      </Row>
-      <Row>
-        <Col>
-        {/* Place links and icons here */}
+        <Col className='text-col'>
+          <p className="p">
+            Developed from scratch by Michael Sheng. &copy; 2021
+          </p>
         </Col>
 
+        <Col className="logo-col">
+          <IconContext.Provider
+            value={{ color: "grey", className: "button-scale" }}
+          >
+            <button className="button-icon">
+              <a
+                target="_blank"
+                href="https://github.com/michaelsheng15"
+                rel="noreferrer"
+              >
+                <AiFillGithub className="logo" />
+              </a>
+            </button>
+          </IconContext.Provider>
+
+          <IconContext.Provider
+            value={{ color: "grey", className: "button-scale" }}
+          >
+            <button className="button-icon">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/michaeljsheng/"
+                rel="noreferrer"
+              >
+                <AiFillLinkedin className="logo" />
+              </a>
+            </button>
+          </IconContext.Provider>
+
+          <IconContext.Provider
+            value={{ color: "grey", className: "button-scale" }}
+          >
+            <button className="button-icon">
+              <a
+                target="_blank"
+                href="mailto:m3sheng@uwaterloo.ca"
+                rel="noreferrer"
+              >
+                <AiFillMail className="logo" />
+              </a>
+            </button>
+          </IconContext.Provider>
+
+          <IconContext.Provider
+            value={{
+              color: "grey",
+              className: "button-scale",
+              border: "none",
+            }}
+          >
+            <button className="button-icon">
+              <a target="_blank" href="null" rel="noreferrer">
+                <AiFillFileMarkdown className="logo" />
+              </a>
+            </button>
+          </IconContext.Provider>
+        </Col>
       </Row>
+   
     </Container>
   );
 };

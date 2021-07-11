@@ -26,7 +26,7 @@ const NavCard = () => {
 
         <Col>
           <Link to="/tips" style={{ textDecoration: "none" }}>
-            <p className="text">Tips 🚀</p>
+            <p className="text">Helpful Tips 💡</p>
           </Link>
         </Col>
 

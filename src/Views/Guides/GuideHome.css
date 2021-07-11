@@ -18,19 +18,19 @@
 }
 
 #email {
-  background-color: blue;
+  background-color: rgba(0, 72, 228, 0.603);
 }
 
 #phone {
-  background-color: green;
+  background-color: rgba(0, 182, 0, 0.623);
 }
 
 #esc {
-  background-color: orange;
+  background-color: rgba(243, 158, 0, 0.61);
 }
 
 #common {
-  background-color: red;
+  background-color: rgba(218, 0, 0, 0.616);
 }
 
 .guide-box {
@@ -57,5 +57,5 @@
 .box-text {
   font-size: 22px;
   font-weight: 600;
-  color: white;
+  color: rgb(255, 255, 255);
 }

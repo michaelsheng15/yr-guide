@@ -1,13 +1,17 @@
 import NavCard from "../Components/NavCard";
 import Footer from "../Components/Footer";
 import { Row, Col, Container, Carousel } from "react-bootstrap";
+
 import "./Home.css";
+import home1 from '../img/home2.png'
+import home2 from '../img/home1.jpeg'
+
 
 const Home = () => {
   return (
-    <div>
+    <div >
       <NavCard />
-      <Container>
+      <Container >
         <Row>
           <Col sm={7} className="text-col">
             <h1>Welcome!</h1>
@@ -20,21 +24,12 @@ const Home = () => {
           </Col>
           <Col sm={5} className="img-col">
             <Carousel nextLabel="" prevLabel="">
-              <Carousel.Item className="slide-container" interval={3000}>
-                <Carousel.Caption>
-                  <h1>Slide 1</h1>
-                </Carousel.Caption>
+
+              <Carousel.Item className="slide-container" >
+                  <img src={home1} className='img'/>
               </Carousel.Item>
-              <Carousel.Item className="slide-container" interval={3000}>
-                <Carousel.Caption>
-                  <h1>Slide 2</h1>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item className="slide-container" interval={3000}>
-                <Carousel.Caption>
-                  <h1>Slide 3</h1>
-                </Carousel.Caption>
-              </Carousel.Item>
+              
+              
             </Carousel>
           </Col>
         </Row>

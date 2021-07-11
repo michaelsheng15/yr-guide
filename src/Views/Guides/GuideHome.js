@@ -13,7 +13,7 @@ const GuideHome = () => {
 
       <div className="header">
         <h1>Guides</h1>
-        <p>Sample text</p>
+        <p>A collection of guides for your daily responsibilities.</p>
       </div>
 
       <Container className="guide-Container">
@@ -21,14 +21,14 @@ const GuideHome = () => {
           <Col sm={8}>
             <Link to="/home" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="email">
-                <p className="box-text">Emails and Callbacks</p>
+                <p className="box-text">Emails and Callbacks ✉️</p>
               </div>
             </Link>
           </Col>
           <Col sm={4}>
             <Link to="/home" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="phone">
-                <p className="box-text">Phone Queue</p>
+                <p className="box-text">Taking Calls ☎️</p>
               </div>
             </Link>
           </Col>
@@ -37,17 +37,17 @@ const GuideHome = () => {
 
       <Container>
         <Row className="guide-row">
-          <Col sm={4}>
+          <Col sm={5}>
             <Link to="/home" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="esc">
-                <p className="box-text">Ticket Escalation</p>
+                <p className="box-text">Ticket Escalation 🎫</p>
               </div>
             </Link>
           </Col>
-          <Col sm={8}>
+          <Col sm={7}>
             <Link to="/home" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="common">
-                <p className="box-text">Common Issues and Solutions</p>
+                <p className="box-text">Common Issues and Solutions 🚩</p>
               </div>
             </Link>
           </Col>
