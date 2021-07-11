@@ -2,13 +2,7 @@
   height: max-content;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20px;
-}
+
 
 .guide-container {
   display: flex;
@@ -18,19 +12,19 @@
 }
 
 #email {
-  background-color: rgba(0, 72, 228, 0.603);
+  background-color: rgba(0, 119, 255, 0.6);
 }
 
 #phone {
-  background-color: rgba(0, 182, 0, 0.623);
+  background-color: rgba(0, 128, 0, 0.6);
 }
 
 #esc {
-  background-color: rgba(243, 158, 0, 0.61);
+  background-color: rgba(255, 178, 34, 0.63);
 }
 
 #common {
-  background-color: rgba(218, 0, 0, 0.616);
+  background-color: rgba(255, 0, 0, 0.6);
 }
 
 .guide-box {

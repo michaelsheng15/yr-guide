@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import "./Tips.css";
+import './Views.css'
+
 import NavCard from "../Components/NavCard";
 import Footer from "../Components/Footer"
 
@@ -10,6 +11,10 @@ const Tips = () => {
   return (
     <div>
       <NavCard />
+      <div className="header">
+        <h1>Helpful Tips</h1>
+        <p>A collection of general tips to boost your productivity and efficiency.</p>
+      </div>
 
       
     </div>

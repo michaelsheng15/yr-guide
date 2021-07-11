@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const NavCard = () => {
   return (
-    <Container className='nav-container'>
+    <Container className="nav-container">
       <Row>
         <Link to="/home" style={{ textDecoration: "none" }}>
-          <p className="large">ITS Service Desk 🏡</p>
+          <p className="large">ITS Handbook 🚀</p>
         </Link>
       </Row>
       <Row>
@@ -19,8 +19,8 @@ const NavCard = () => {
         </Col>
 
         <Col>
-          <Link to="/yr-apps" style={{ textDecoration: "none" }}>
-            <p className="text">YR Apps 🛠</p>
+          <Link to="/tools" style={{ textDecoration: "none" }}>
+            <p className="text">Tools 🛠</p>
           </Link>
         </Col>
 
@@ -33,12 +33,6 @@ const NavCard = () => {
         <Col>
           <Link to="/resources" style={{ textDecoration: "none" }}>
             <p className="text">Resources 🧰</p>
-          </Link>
-        </Col>
-
-        <Col>
-          <Link to="/contact" style={{ textDecoration: "none" }}>
-            <p className="text">Contact 📞</p>
           </Link>
         </Col>
       </Row>

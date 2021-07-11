@@ -25,5 +25,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: row;
+}
+
+.name{
+  color: rgb(234, 0, 255);
 }
 

@@ -1,19 +1,23 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import "./YApps.css";
+import './Views.css'
 import NavCard from "../Components/NavCard";
 import Footer from "../Components/Footer"
 
 import { Link } from "react-router-dom";
 
-const YApps = () => {
+const Tools = () => {
   return (
-    <div className='screen'>
+    <div>
       <NavCard />
+      <div className="header">
+        <h1>Tools</h1>
+        <p>Tools and applications used across York Region departments.</p>
+      </div>
 
       
     </div>
   );
 };
 
-export default YApps;
+export default Tools;

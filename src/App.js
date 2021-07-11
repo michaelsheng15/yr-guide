@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from './Views/Home'
 import GuideHome from './Views/Guides/GuideHome'
-import Apps from './Views/YApps'
+import Tools from './Views/Tools'
 import Tips from './Views/Tips'
 import Resources from './Views/Resources'
 
@@ -17,7 +17,7 @@ class App extends Component {
       <Switch>
         <Route exact path="/home" component={Home}/>
         <Route exact path="/guides" component={GuideHome} />
-        <Route exact path="/yr-apps" component={Apps} />
+        <Route exact path="/tools" component={Tools} />
         <Route exact path="/tips" component={Tips} />
         <Route exact path="/resources" component={Resources} />
         <Route exact path="/contact" component={''} />

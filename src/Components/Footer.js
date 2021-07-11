@@ -13,7 +13,7 @@ const Footer = () => {
       <Row>
         <Col className='text-col'>
           <p className="p">
-            Developed from scratch by Michael Sheng. &copy; 2021
+            Developed by <span className='name'>Michael Sheng</span>. &copy; 2021
           </p>
         </Col>
 
@@ -56,20 +56,6 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <AiFillMail className="logo" />
-              </a>
-            </button>
-          </IconContext.Provider>
-
-          <IconContext.Provider
-            value={{
-              color: "grey",
-              className: "button-scale",
-              border: "none",
-            }}
-          >
-            <button className="button-icon">
-              <a target="_blank" href="null" rel="noreferrer">
-                <AiFillFileMarkdown className="logo" />
               </a>
             </button>
           </IconContext.Provider>

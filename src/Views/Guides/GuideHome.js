@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./GuideHome.css";
+import '../Views.css'
 import NavCard from "../../Components/NavCard";
 import Footer from "../../Components/Footer"
 
