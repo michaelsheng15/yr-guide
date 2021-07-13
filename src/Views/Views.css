@@ -1,7 +1,51 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.tip-container {
+  max-width: 800px;
+  border-radius: 8px;
+  margin: 40px auto 60px auto;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.6),
+    0 6px 20px 0 rgba(236, 236, 236, 0.6);
+  transition: box-shadow 0.3s;
+  border: #d8d8d854 1.5px solid;
+}
+
+.tip-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.3),
+    0 6px 20px 0 rgba(36, 36, 36, 0.3);
+}
+.tip-row {
+  padding-top: 0;
+}
+
+.tip-h {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.tip-p {
+  color: rgb(0, 0, 0);
+}
+
+.text-card {
+  padding: 30px;
+}
+
+.tip-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.ig {
+  width: 200px;
+  height: 200px;
+}

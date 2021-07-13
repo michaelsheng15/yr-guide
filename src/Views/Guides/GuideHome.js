@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const GuideHome = () => {
   return (
-    <div className='screen'>
+    <div>
       <NavCard />
 
       <div className="header">
@@ -17,7 +17,7 @@ const GuideHome = () => {
         <p>A collection of guides for your daily responsibilities.</p>
       </div>
 
-      <Container className="guide-Container">
+      <Container>
         <Row className="guide-row">
           <Col sm={8}>
             <Link to="/home" style={{ textDecoration: "none" }}>

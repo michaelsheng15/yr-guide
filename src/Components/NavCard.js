@@ -14,25 +14,25 @@ const NavCard = () => {
       <Row>
         <Col>
           <Link to="/guides" style={{ textDecoration: "none" }}>
-            <p className="text">Guides 📚</p>
+            <p className="text">Guides</p>
           </Link>
         </Col>
 
         <Col>
           <Link to="/tools" style={{ textDecoration: "none" }}>
-            <p className="text">Tools 🛠</p>
+            <p className="text">Tools</p>
           </Link>
         </Col>
 
         <Col>
           <Link to="/tips" style={{ textDecoration: "none" }}>
-            <p className="text">Helpful Tips 💡</p>
+            <p className="text">Tips</p>
           </Link>
         </Col>
 
         <Col>
           <Link to="/resources" style={{ textDecoration: "none" }}>
-            <p className="text">Resources 🧰</p>
+            <p className="text">Resources</p>
           </Link>
         </Col>
       </Row>
