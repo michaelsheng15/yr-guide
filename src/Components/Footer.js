@@ -10,7 +10,7 @@ import { IconContext } from "react-icons";
 const Footer = () => {
   return (
     <Container className="footer-container">
-      <Row>
+      <Row className='footer-row'>
         <Col className='text-col'>
           <p className="p">
             Developed by <span className='name'>Michael Sheng</span>. &copy; 2021

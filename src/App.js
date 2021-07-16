@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from './Views/Home'
 import GuideHome from './Views/Guides/GuideHome'
+import TicketEscalation from './Views/Guides/TicketEscalation'
+
 import Tools from './Views/Tools'
 import Tips from './Views/Tips'
 import Resources from './Views/Resources'
@@ -20,7 +22,7 @@ class App extends Component {
         <Route exact path="/tools" component={Tools} />
         <Route exact path="/tips" component={Tips} />
         <Route exact path="/resources" component={Resources} />
-        <Route exact path="/contact" component={''} />
+        <Route exact path="/ticketescalation" component={TicketEscalation} />
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>

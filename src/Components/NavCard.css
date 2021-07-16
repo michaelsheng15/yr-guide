@@ -6,7 +6,7 @@
   background-color: white;
 }
 
-.row {
+.nav-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.col {
+.nav-col {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 13px;
   color: rgb(26, 26, 26);
-  transition: transform 0.2s, color 0.5s;
+  transition: transform 0.2s;
 }
 
 .text:hover {

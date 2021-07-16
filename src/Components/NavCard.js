@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 const NavCard = () => {
   return (
     <Container className="nav-container">
-      <Row>
+      <Row className='nav-row'>
         <Link to="/home" style={{ textDecoration: "none" }}>
           <p className="large">ITS Handbook 🚀</p>
         </Link>
       </Row>
-      <Row>
+      <Row className='nav-row'>
         <Col>
           <Link to="/guides" style={{ textDecoration: "none" }}>
             <p className="text">Guides</p>

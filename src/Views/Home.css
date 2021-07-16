@@ -22,7 +22,6 @@
     rgba(217, 232, 255, 1) 74%,
     rgba(141, 225, 255, 1) 100%
   );
-
 }
 
 .text-col {
@@ -33,18 +32,24 @@
   padding-left: 0;
 }
 
-.row {
+.home-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
   width: 100%;
-}
-
-.blue {
-  color: rgb(4, 0, 255);
 }
 
 .btn {
   background-color: rgb(4, 0, 255);
-  border: none;
   font-size: 12px;
+  border: 1px solid rgb(4, 0, 255);
+  color: white;
+  margin-right: 15px;
+}
+
+.btn:hover {
+  background-color: rgb(4, 0, 211);
   color: white;
 }
 
@@ -65,4 +70,16 @@
   font-size: 70px;
   font-weight: 650;
   color: rgb(15, 15, 15);
+}
+
+#outline {
+  background-color: white;
+  border: 1px solid rgb(4, 0, 255);
+  color: rgb(4, 0, 255);
+  transition: background-color 3s color 0.2s;
+}
+
+#outline:hover {
+  background-color: rgb(4, 0, 255);
+  color: rgb(255, 255, 255);
 }

@@ -1,9 +1,8 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./GuideHome.css";
-import '../Views.css'
 import NavCard from "../../Components/NavCard";
-import Footer from "../../Components/Footer"
+
 
 import { Link } from "react-router-dom";
 
@@ -39,7 +38,7 @@ const GuideHome = () => {
       <Container>
         <Row className="guide-row">
           <Col sm={5}>
-            <Link to="/home" style={{ textDecoration: "none" }}>
+            <Link to="/ticketescalation" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="esc">
                 <p className="box-text">Ticket Escalation 🎫</p>
               </div>

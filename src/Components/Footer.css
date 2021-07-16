@@ -2,6 +2,10 @@
   margin-top: 80px;
 }
 
+.footer-row{
+  width: 100%;
+}
+
 .button-icon {
   border: none;
   background: none;

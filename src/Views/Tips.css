@@ -1,3 +1,5 @@
+
+
 .header {
   display: flex;
   justify-content: center;
@@ -14,24 +16,27 @@
   box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.6),
     0 6px 20px 0 rgba(236, 236, 236, 0.6);
   transition: box-shadow 0.3s;
-  border: #d8d8d854 1.5px solid;
+  border: #c5c5c554 1.5px solid;
 }
 
 .tip-container:hover {
-  box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.3),
-    0 6px 20px 0 rgba(36, 36, 36, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 119, 255, 0.3),
+    0 6px 10px 0 rgba(0, 119, 255, 0.3);
 }
 .tip-row {
   padding-top: 0;
+  width: 100%;
 }
 
+
 .tip-h {
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .tip-p {
   color: rgb(0, 0, 0);
+  font-size: 12px;
 }
 
 .text-card {
@@ -43,9 +48,21 @@
   justify-content: center;
   align-items: center;
   border-radius: 0px 8px 8px 0px;
+  height: 200px;
+  background-color: rgb(0, 26, 255);
 }
 
 .ig {
-  width: 200px;
-  height: 200px;
+  width: 125px;
+  height: auto;
+}
+
+.card {
+  margin: 0px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.6),
+    0 6px 20px 0 rgba(236, 236, 236, 0.6);
+}
+.card:hover {
+  transform: scale(1.02);
 }

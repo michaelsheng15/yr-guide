@@ -1,6 +1,3 @@
-
-
-
 #email {
   background-color: rgba(0, 119, 255, 0.6);
 }
@@ -19,13 +16,11 @@
 
 .guide-box {
   height: 175px;
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 0.3s, box-shadow 0.4s;
-  box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.2),
-    0 6px 20px 0 rgba(236, 236, 236, 0.2);
 }
 
 .guide-box:hover {
@@ -36,6 +31,10 @@
 
 .guide-row {
   width: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .box-text {
