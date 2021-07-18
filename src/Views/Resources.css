@@ -1,0 +1,54 @@
+.res-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.res-container {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 40px auto 20px auto;
+}
+
+
+
+.res-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.res-box-doc{
+    background-color: rgb(88, 188, 255);
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.1s;
+    margin-bottom: 15px;
+    max-width: 350px;
+}
+
+.res-box-sheet{
+  background-color: rgb(20, 240, 0);
+  border-radius: 5px;
+  padding: 5px;
+  transition: transform 0.1s;
+  margin-bottom: 15px;
+  max-width: 350px;
+
+}
+
+.res-box-doc:hover{
+    transform: scale(1.02);
+}
+
+.res-box-sheet:hover{
+  transform: scale(1.02);
+}
+
+.res-sub-header{
+  font-size: 22px;
+  color: rgb(39, 39, 39);
+}
