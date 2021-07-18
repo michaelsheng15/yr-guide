@@ -2,9 +2,12 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./GuideHome.css";
 import NavCard from "../../Components/NavCard";
-
-
 import { Link } from "react-router-dom";
+
+import { BiMailSend } from "react-icons/bi";
+import { BiPhoneCall } from "react-icons/bi";
+import { BiError } from "react-icons/bi";
+import { BiIdCard } from "react-icons/bi";
 
 const GuideHome = () => {
   return (
@@ -21,14 +24,18 @@ const GuideHome = () => {
           <Col sm={8}>
             <Link to="/home" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="email">
-                <p className="box-text">Emails and Callbacks ✉️</p>
+                <p className="box-text">
+                  Emails and Callbacks <BiMailSend />
+                </p>
               </div>
             </Link>
           </Col>
           <Col sm={4}>
             <Link to="/home" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="phone">
-                <p className="box-text">Taking Calls ☎️</p>
+                <p className="box-text">
+                  Taking Calls <BiPhoneCall />
+                </p>
               </div>
             </Link>
           </Col>
@@ -40,14 +47,18 @@ const GuideHome = () => {
           <Col sm={5}>
             <Link to="/ticketescalation" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="esc">
-                <p className="box-text">Ticket Escalation 🎫</p>
+                <p className="box-text">
+                  Ticket Escalation <BiIdCard />
+                </p>
               </div>
             </Link>
           </Col>
           <Col sm={7}>
             <Link to="/home" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="common">
-                <p className="box-text">Common Issues and Solutions 🚩</p>
+                <p className="box-text">
+                  Common Issues and Solutions <BiError />
+                </p>
               </div>
             </Link>
           </Col>

@@ -3,6 +3,8 @@ import { Row, Col, Container } from "react-bootstrap";
 import "./TicketEscalation.css";
 
 import NavCard from "../../Components/NavCard";
+import { BiDetail } from "react-icons/bi";
+import { BiBookBookmark } from "react-icons/bi";
 
 const TicketEscalation = () => {
   return (
@@ -33,7 +35,9 @@ const TicketEscalation = () => {
             </div>
 
             <div className="terms-card">
-              <h6 className="card-h">Key Terms</h6>
+              <h6 className="card-h">
+                Key Terms <BiBookBookmark />
+              </h6>
               <p className="esc-p">
                 <strong>LSS/FSS:</strong> Field Support Specialist
               </p>
@@ -52,7 +56,9 @@ const TicketEscalation = () => {
       </Container>
 
       <div className="esc-guide-back">
-        <h3 className="esc-sub-header">Ticket Escalation Guide</h3>
+        <h3 className="esc-sub-header">
+          Ticket Escalation Guide <BiDetail />
+        </h3>
         <Container className="esc-container">
           <Row className="esc-row">
             <h3 className="esc-h">#1: Deciding to Escalate</h3>
@@ -120,8 +126,7 @@ const TicketEscalation = () => {
                   Transportation {">"} SC_TransportationServices
                 </p>
                 <p className="esc-p">
-                  CS/LCS/RapidCo/CAO/Finance/YTN{" "}
-                  {">"} SC_ServiceDesk2ndLevel
+                  CS/LCS/RapidCo/CAO/Finance/YTN {">"} SC_ServiceDesk2ndLevel
                 </p>
                 <p className="esc-p">
                   Hardware Specific Issues {">"} SC_ServiceDesk2ndLevel

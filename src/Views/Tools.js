@@ -2,6 +2,13 @@ import React from "react";
 import { Row, Col, Container, Card, Button } from "react-bootstrap";
 import NavCard from "../Components/NavCard";
 import "./Tools.css";
+import { BiGitPullRequest } from "react-icons/bi";
+import { BiCube } from "react-icons/bi";
+import { BiCollection } from "react-icons/bi";
+
+
+
+
 
 const Tools = () => {
   return (
@@ -15,7 +22,7 @@ const Tools = () => {
       <Container className="tools-container">
         <div>
           <Row className="tools-row">
-            <h3>Request Systems</h3>
+            <h3 className='tools-sub-header'>Request Systems <BiGitPullRequest /></h3>
             <Col className="tools-col">
               <Card className="tools-card">
                 <Card.Img variant="top" src="" />
@@ -80,7 +87,7 @@ const Tools = () => {
       <Container className="tools-container">
         <div>
           <Row className="tools-row">
-            <h3>IT Exclusive Tools</h3>
+            <h3 className='tools-sub-header'>IT Exclusive Tools <BiCube /></h3>
             <Col className="tools-col">
               <Card className="tools-card">
                 <Card.Img variant="top" src="" />
@@ -175,7 +182,7 @@ const Tools = () => {
       <Container className="tools-container">
         <div>
           <Row className="tools-row">
-            <h3>York Region Applications</h3>
+            <h3 className='tools-sub-header'>York Region Applications <BiCollection /></h3>
             <Col className="tools-col">
               <Card className="tools-card">
                 <Card.Img variant="top" src="" />
