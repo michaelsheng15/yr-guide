@@ -16,7 +16,7 @@ const Tips = () => {
   return (
     <div>
       <NavCard />
-      <div className="header">
+      <div className="tips-header">
         <h1>Helpful Tips</h1>
         <p>
           A collection of tips to boost your productivity and

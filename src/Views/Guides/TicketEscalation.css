@@ -1,32 +1,69 @@
 .esc-row {
-  max-width: 700px;  
+  max-width: 100%;
+}
+
+.esc-h {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.esc-p {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+
+.esc-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .card-container {
   display: flex;
+  margin-top: 40px;
 }
 
-.container-stack {
+.esc-container {
   display: flex;
   flex-direction: column;
+  max-width: 830px;
+  margin: 15px auto 15px auto;
+  padding: 30px;
 }
 
 .terms-card {
-  background: orange;
-  border-radius: 10px;
-  padding: 20px;
+  border: 3px solid rgba(250, 113, 255, 0.63);
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 15px;
   margin-right: 20px;
   max-width: 800px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
-.card-h{
-  font-size: 20px;
+.card-h {
+  font-size: 18px;
   font-weight: 650;
 }
 
-.card-row{
+.esc-card-row {
   width: 800px;
-  background-color: orangered;
 }
 
+.esc-sub-header {
+  font-size: 30px;
+  padding-left: 40px;
+  padding-top: 40px;
+  font-weight: 600;
+}
+
+.esc-guide-back {
+  background-color: rgba(255, 193, 250, 0.479);
+  width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}

@@ -4,7 +4,6 @@ import "./Footer.css";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
-import { AiFillFileMarkdown } from "react-icons/ai";
 import { IconContext } from "react-icons";
 
 const Footer = () => {

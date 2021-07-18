@@ -11,7 +11,7 @@ const GuideHome = () => {
     <div>
       <NavCard />
 
-      <div className="header">
+      <div className="guide-header">
         <h1>Guides</h1>
         <p>A collection of guides for your daily responsibilities.</p>
       </div>

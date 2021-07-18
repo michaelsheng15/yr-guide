@@ -1,0 +1,49 @@
+.tools-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.tools-row {
+  width: 100%;
+  margin: auto;
+}
+
+.tools-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.tools-container {
+  display: flex;
+  max-width: 900px;
+  margin: 40px auto 20px auto;
+}
+
+.tools-card {
+  margin-bottom: 30px;
+  padding: 0;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.6),
+    0 6px 20px 0 rgba(236, 236, 236, 0.6);
+  max-width: 416px;
+}
+.tools-card:hover {
+  transform: scale(1.02);
+}
+
+.card-title {
+  font-size: 18px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.tools-row h3 {
+  margin-bottom: 20px;
+}

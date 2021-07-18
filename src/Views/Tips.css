@@ -1,11 +1,11 @@
 
 
-.header {
+.tips-header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .tip-container {
@@ -55,14 +55,6 @@
 .ig {
   width: 125px;
   height: auto;
+  
 }
 
-.card {
-  margin: 0px;
-  transition: transform 0.2s;
-  box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.6),
-    0 6px 20px 0 rgba(236, 236, 236, 0.6);
-}
-.card:hover {
-  transform: scale(1.02);
-}
