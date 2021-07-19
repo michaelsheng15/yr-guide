@@ -1,19 +1,3 @@
-#email {
-  background-color: rgba(0, 119, 255, 0.6);
-}
-
-#phone {
-  background-color: rgba(20, 173, 20, 0.6);
-}
-
-#esc {
-  background-color: rgba(249, 67, 255, 0.63);
-}
-
-#common {
-  background-color: rgba(255, 0, 0, 0.678);
-}
-
 .guide-box {
   height: 175px;
   border-radius: 5px;
@@ -40,10 +24,9 @@
 .box-text {
   font-size: 22px;
   font-weight: 600;
-  color: rgb(255, 255, 255);
 }
 
-.guide-header{
+.guide-header {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -23,8 +23,8 @@ const GuideHome = () => {
         <Row className="guide-row">
           <Col sm={8}>
             <Link to="/home" style={{ textDecoration: "none" }}>
-              <div className="guide-box" id="email">
-                <p className="box-text">
+              <div className="guide-box" style={{backgroundColor:'rgba(0, 119, 255, 0.6)'}}>
+                <p className="box-text" style={{color:'blue'}}>
                   Emails and Callbacks <BiMailSend />
                 </p>
               </div>
@@ -32,8 +32,8 @@ const GuideHome = () => {
           </Col>
           <Col sm={4}>
             <Link to="/home" style={{ textDecoration: "none" }}>
-              <div className="guide-box" id="phone">
-                <p className="box-text">
+              <div className="guide-box" style={{backgroundColor:'rgba(20, 173, 20, 0.6)'}}>
+                <p className="box-text" style={{color:'rgb(0, 110, 0)'}}>
                   Taking Calls <BiPhoneCall />
                 </p>
               </div>
@@ -46,8 +46,8 @@ const GuideHome = () => {
         <Row className="guide-row">
           <Col sm={5}>
             <Link to="/ticketescalation" style={{ textDecoration: "none" }}>
-              <div className="guide-box" id="esc">
-                <p className="box-text">
+              <div className="guide-box" style={{backgroundColor:'rgba(249, 67, 255, 0.63)'}}>
+                <p className="box-text" style={{color:'rgb(195, 0, 202)'}}>
                   Ticket Escalation <BiIdCard />
                 </p>
               </div>
@@ -55,8 +55,8 @@ const GuideHome = () => {
           </Col>
           <Col sm={7}>
             <Link to="/issues" style={{ textDecoration: "none" }}>
-              <div className="guide-box" id="common">
-                <p className="box-text">
+              <div className="guide-box" style={{backgroundColor:'rgba(255, 0, 0, 0.678)'}}>
+                <p className="box-text" style={{color:'rgb(184, 0, 0)'}}>
                   Common Issues and Solutions <BiError />
                 </p>
               </div>
