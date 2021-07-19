@@ -54,7 +54,7 @@ const GuideHome = () => {
             </Link>
           </Col>
           <Col sm={7}>
-            <Link to="/home" style={{ textDecoration: "none" }}>
+            <Link to="/issues" style={{ textDecoration: "none" }}>
               <div className="guide-box" id="common">
                 <p className="box-text">
                   Common Issues and Solutions <BiError />
