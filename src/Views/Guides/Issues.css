@@ -34,7 +34,7 @@
   border: rgba(255, 0, 0, 0.678) 3px solid;
   padding: 20px;
   border-radius: 5px;
-  background-color: rgba(255, 214, 214, 0.349);
+  /* background-color: rgba(255, 214, 214, 0.349); */
   box-shadow: 0 4px 8px 0 rgba(209, 209, 209, 0.6),
     0 6px 20px 0 rgba(209, 209, 209, 0.6);
   transition: box-shadow 0.3s;

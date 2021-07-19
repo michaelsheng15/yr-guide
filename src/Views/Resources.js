@@ -3,11 +3,14 @@ import { Row, Col, Container } from "react-bootstrap";
 import NavCard from "../Components/NavCard";
 import "./Resources.css";
 
-import { HiOutlineDocumentDuplicate } from "react-icons/hi";
-import { BsFileSpreadsheet } from "react-icons/bs";
+import { BiFolder } from "react-icons/bi";
+import { BiFile } from "react-icons/bi";
+import { BiBook } from "react-icons/bi";
 
 
 
+
+import { BiSpreadsheet } from "react-icons/bi";
 
 const Resources = () => {
   return (
@@ -21,39 +24,53 @@ const Resources = () => {
       <Container className="res-container">
         <Row className="res-row">
           <Col className="res-col">
-            <h3 className="res-sub-header">Documents</h3>
+            <h3 className="res-sub-header">
+              Documents <BiFolder />
+            </h3>
             <div className="res-box-doc">
-              <a><HiOutlineDocumentDuplicate />Test</a>
+              <a><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><HiOutlineDocumentDuplicate />Test</a>
+              <a><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><HiOutlineDocumentDuplicate />Test</a>
+              <a><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><HiOutlineDocumentDuplicate />Test</a>
+              <a><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><HiOutlineDocumentDuplicate />Test</a>
+              <a><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><HiOutlineDocumentDuplicate />Test</a>
+              <a><BiFile/>Test</a>
             </div>
           </Col>
           <Col>
-            <h3 className='res-sub-header'>Spreadsheets</h3>
+            <h3 className="res-sub-header">Spreadsheets <BiBook /></h3>
             <div className="res-box-sheet">
-              <a><BsFileSpreadsheet />Test</a>
+              <a>
+                <BiSpreadsheet />
+                Test
+              </a>
             </div>
             <div className="res-box-sheet">
-              <a><BsFileSpreadsheet />Test</a>
+              <a>
+                <BiSpreadsheet />
+                Test
+              </a>
             </div>
             <div className="res-box-sheet">
-              <a><BsFileSpreadsheet />Test</a>
+              <a>
+                <BiSpreadsheet />
+                Test
+              </a>
             </div>
             <div className="res-box-sheet">
-              <a><BsFileSpreadsheet />Test</a>
+              <a>
+                <BiSpreadsheet />
+                Test
+              </a>
             </div>
           </Col>
         </Row>
