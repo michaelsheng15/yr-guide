@@ -22,16 +22,16 @@ const GuideHome = () => {
       <Container>
         <Row className="guide-row">
           <Col sm={8}>
-            <Link to="/home" style={{ textDecoration: "none" }}>
+            <Link to="/emails" style={{ textDecoration: "none" }}>
               <div className="guide-box" style={{backgroundColor:'rgba(0, 119, 255, 0.6)'}}>
                 <p className="box-text" style={{color:'blue'}}>
-                  Emails and Callbacks <BiMailSend />
+                  Tickets and Emails <BiMailSend />
                 </p>
               </div>
             </Link>
           </Col>
           <Col sm={4}>
-            <Link to="/home" style={{ textDecoration: "none" }}>
+            <Link to="/calls" style={{ textDecoration: "none" }}>
               <div className="guide-box" style={{backgroundColor:'rgba(20, 173, 20, 0.6)'}}>
                 <p className="box-text" style={{color:'rgb(0, 110, 0)'}}>
                   Taking Calls <BiPhoneCall />
