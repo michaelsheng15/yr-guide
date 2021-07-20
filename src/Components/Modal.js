@@ -26,7 +26,7 @@ const Modal = ({ handleClose, show, children }) => {
                 Sheng</span> in Summer 2021.
               </p>
               <p>
-                <b>Tools:</b> React.js | CSS | Bootstrap
+                <b>Tools:</b> React.js | CSS | Bootstrap | Heroku
               </p>
               <p>Have a recommendation? Contact me!</p>
               <div className="modal-btn-div">
