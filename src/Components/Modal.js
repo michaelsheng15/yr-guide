@@ -22,8 +22,8 @@ const Modal = ({ handleClose, show, children }) => {
                 About the Developer! <BiUser />
               </h3>
               <p>
-                This website is developed completely from scratch by Michael
-                Sheng in Summer 2021.
+                This website is developed completely from scratch by <span style={{color:'rgb(234, 0, 255)'}}>Michael
+                Sheng</span> in Summer 2021.
               </p>
               <p>
                 <b>Tools:</b> React.js | CSS | Bootstrap
