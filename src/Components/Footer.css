@@ -3,7 +3,8 @@
 }
 
 .footer-row{
-  width: 100%;
+  width: 95%;
+  margin-top: 3%;
 }
 
 .button-icon {
@@ -34,5 +35,9 @@
 
 .name{
   color: rgb(234, 0, 255);
+}
+
+.footer-p{
+  font-size: 15px;
 }
 

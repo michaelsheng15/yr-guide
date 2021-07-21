@@ -19,17 +19,16 @@ const Emails = () => {
 
       <Container className="mail-container">
         <Row className="mail-row">
-          <h3 className="esc-h">What are Tickets?</h3>
+          <h3 className="mail-h">What are Tickets?</h3>
           <Col>
             <div>
               <p className="mail-p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                A ticket is a capsule of information regarding a client's issue
+                and it is a way to track critical information and progress.
+                Creating tickets is an essential part of your responsibilities and
+                provided is a guide outlining each different section of a
+                ticket, the information it should include and helpful tips to
+                create effective tickets.
               </p>
             </div>
           </Col>
@@ -144,17 +143,15 @@ const Emails = () => {
 
       <Container className="mail-container">
         <Row className="mail-row">
-          <h3 className="esc-h">Monitoring the ITS Inbox</h3>
+          <h3 className="mail-h">Monitoring the ITS Inbox</h3>
           <Col>
             <div>
               <p className="mail-p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                The ITS inbox is a shared inbox across the entire ITS team where
+                dozens of issues and requests appear. As a support analyst,
+                monitoring and taking emails is a key responsibility. While each
+                email will be different, provided is an algorithmic guide
+                developed from my own experience.
               </p>
             </div>
           </Col>
@@ -167,9 +164,7 @@ const Emails = () => {
         </h3>
         <Container className="mail-container">
           <Row className="mail-row">
-            <h3 className="mail-h">
-              #1: Drag Desired Email into Personal Inbox
-            </h3>
+            <h3 className="mail-h">#1: Take emails and organize inbox</h3>
 
             <Col>
               <div>
@@ -196,7 +191,7 @@ const Emails = () => {
         <Container className="mail-container">
           <Row className="mail-row">
             <h3 className="mail-h">
-              #2: Create Ticket and Brainstorm Possible Solutions
+              #2: Create ticket and brainstorm solutions
             </h3>
 
             <Col>
@@ -245,7 +240,7 @@ const Emails = () => {
         </Container>
         <Container className="mail-container">
           <Row className="mail-row">
-            <h3 className="mail-h">#3: Schedule and Complete Callback</h3>
+            <h3 className="mail-h">#3: Schedule and complete callback</h3>
             <Col>
               <div>
                 <p className="mail-p">
@@ -270,32 +265,7 @@ const Emails = () => {
 
         <Container className="mail-container">
           <Row className="mail-row">
-            <h3 className="mail-h">#4: Update and Close Ticket</h3>
-            <Col>
-              <div>
-                <p className="mail-p">
-                  &#9679; Always start by connecting with the clients screen to
-                  gain a better understanding of the problem
-                </p>
-                <p className="mail-p">
-                  &#9679; Complete inital troubleshooting by accessing scripts
-                  and old tickets
-                </p>
-                <p className="mail-p">
-                  &#9679; Record all attemped solutions and their results (Ex.
-                  eDOCS DMreset {">"} unsuccessful)
-                </p>
-                <p className="mail-p">
-                  &#9679; Be detailed and concise in description of problem
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-
-        <Container className="mail-container">
-          <Row className="mail-row">
-            <h3 className="mail-h">Helpful Tips and Tricks</h3>
+            <h3 className="mail-h">#4: Update and close ticket</h3>
             <Col>
               <div>
                 <p className="mail-p">

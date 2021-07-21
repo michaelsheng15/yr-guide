@@ -11,7 +11,7 @@ const Footer = () => {
     <Container className="footer-container">
       <Row className='footer-row'>
         <Col className='text-col'>
-          <p className="p">
+          <p className="footer-p">
             Developed by <span className='name'>Michael Sheng</span>. &copy; 2021
           </p>
         </Col>

@@ -9,23 +9,23 @@
 .calls-container {
   display: flex;
   flex-direction: column;
-  max-width: 830px;
+  max-width: 900px;
   padding: 30px;
 }
 
 .calls-row {
-  max-width: 100%;
+  width: 100%;
 }
 
 .calls-h {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .calls-p {
   color: rgb(0, 0, 0);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .calls-card {
@@ -45,7 +45,8 @@
 
 .calls-guide-back {
   background-color: rgba(110, 255, 110, 0.568);
-  width: 800px;
+  border: 1px solid rgba(20, 173, 20, 0.6);
+  width: 900px;
   margin: auto;
   border-radius: 10px;
   margin-bottom: 50px;

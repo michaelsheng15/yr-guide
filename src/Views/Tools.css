@@ -8,7 +8,12 @@
 
 .tools-row {
   width: 100%;
-  margin: auto;
+  margin:auto;
+
+}
+
+.tools-div{
+  width: 950px;
 }
 
 .tools-col {
@@ -16,11 +21,11 @@
   align-items: center;
   justify-content: center;
   padding: 0;
+  margin: 0px 11px 0px 11px;
 }
 
 .tools-container {
   display: flex;
-  max-width: 900px;
   margin: 40px auto 20px auto;
 }
 
@@ -30,25 +35,30 @@
   transition: transform 0.2s;
   box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.6),
     0 6px 20px 0 rgba(236, 236, 236, 0.6);
-  max-width: 416px;
+  width: 450px;
 }
 .tools-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
+  box-shadow: 0 6px 10px 0 rgba(0, 119, 255, 0.3),
+    0 6px 10px 0 rgba(0, 119, 255, 0.3);
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .card-text {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .tools-row h3 {
   margin-bottom: 20px;
 }
 
-.tools-sub-header{
-  font-size: 25px;
+.tools-sub-header {
+  font-size: 28px;
   font-weight: 600;
+  width: 100%;
+  margin-left: 15px;
 }
+

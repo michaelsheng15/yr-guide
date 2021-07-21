@@ -24,7 +24,7 @@ const GuideHome = () => {
           <Col sm={8}>
             <Link to="/emails" style={{ textDecoration: "none" }}>
               <div className="guide-box" style={{backgroundColor:'rgba(0, 119, 255, 0.6)'}}>
-                <p className="box-text" style={{color:'blue'}}>
+                <p className="box-text">
                   Tickets and Emails <BiMailSend />
                 </p>
               </div>
@@ -33,7 +33,7 @@ const GuideHome = () => {
           <Col sm={4}>
             <Link to="/calls" style={{ textDecoration: "none" }}>
               <div className="guide-box" style={{backgroundColor:'rgba(20, 173, 20, 0.6)'}}>
-                <p className="box-text" style={{color:'rgb(0, 110, 0)'}}>
+                <p className="box-text">
                   Taking Calls <BiPhoneCall />
                 </p>
               </div>
@@ -47,7 +47,7 @@ const GuideHome = () => {
           <Col sm={5}>
             <Link to="/ticketescalation" style={{ textDecoration: "none" }}>
               <div className="guide-box" style={{backgroundColor:'rgba(249, 67, 255, 0.63)'}}>
-                <p className="box-text" style={{color:'rgb(195, 0, 202)'}}>
+                <p className="box-text">
                   Ticket Escalation <BiIdCard />
                 </p>
               </div>
@@ -56,7 +56,7 @@ const GuideHome = () => {
           <Col sm={7}>
             <Link to="/issues" style={{ textDecoration: "none" }}>
               <div className="guide-box" style={{backgroundColor:'rgba(255, 0, 0, 0.678)'}}>
-                <p className="box-text" style={{color:'rgb(184, 0, 0)'}}>
+                <p className="box-text">
                   Common Issues and Solutions <BiError />
                 </p>
               </div>

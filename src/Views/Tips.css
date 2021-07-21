@@ -9,7 +9,7 @@
 }
 
 .tip-container {
-  max-width: 800px;
+  max-width: 900px;
   border-radius: 8px;
   margin: 40px auto 60px auto;
   padding: 0;
@@ -30,13 +30,13 @@
 
 
 .tip-h {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
 }
 
 .tip-p {
   color: rgb(0, 0, 0);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .text-card {
@@ -48,7 +48,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 0px 8px 8px 0px;
-  height: 200px;
+  height: 220px;
   background-color: rgb(0, 26, 255);
 }
 

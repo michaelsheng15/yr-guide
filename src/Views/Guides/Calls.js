@@ -15,8 +15,6 @@ const Calls = () => {
         <p>Sample</p>
       </div>
 
-      {/* Ecallss Section */}
-
       <Container className="calls-container">
         <Row className="calls-row">
           <h3 className="esc-h">Monitoring the ITS Phone Queue</h3>

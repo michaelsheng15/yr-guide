@@ -25,7 +25,6 @@ class App extends Component {
         <Route exact path="/issues" component={Issues} />
         <Route exact path="/emails" component={Emails} />
         <Route exact path="/calls" component={Calls} />
-
         <Route exact path="/ticketescalation" component={TicketEscalation} />
         <Route exact path="/">
           <Redirect to="/home" />

@@ -10,7 +10,7 @@
   .modal-main {
     position:fixed;
     background: white;
-    width: 50%;
+    width: 45%;
     height: auto;
     top:50%;
     left:50%;
@@ -30,7 +30,7 @@
 
   .btn-modal {
     background-color: rgb(4, 0, 255);
-    font-size: 12px;
+    font-size: 14px;
     border: 1px solid rgb(4, 0, 255);
     color: white;
     margin-right: 15px;
@@ -59,7 +59,7 @@
 
   .modal-row p{
     color: rgb(0, 0, 0);
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 8px;
   }
 
