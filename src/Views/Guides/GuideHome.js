@@ -23,7 +23,10 @@ const GuideHome = () => {
         <Row className="guide-row">
           <Col sm={8}>
             <Link to="/emails" style={{ textDecoration: "none" }}>
-              <div className="guide-box" style={{backgroundColor:'rgba(0, 119, 255, 0.6)'}}>
+              <div
+                className="guide-box"
+                style={{ backgroundColor: "rgba(0, 119, 255, 0.6)" }}
+              >
                 <p className="box-text">
                   Tickets and Emails <BiMailSend />
                 </p>
@@ -32,7 +35,10 @@ const GuideHome = () => {
           </Col>
           <Col sm={4}>
             <Link to="/calls" style={{ textDecoration: "none" }}>
-              <div className="guide-box" style={{backgroundColor:'rgba(20, 173, 20, 0.6)'}}>
+              <div
+                className="guide-box"
+                style={{ backgroundColor: "rgba(20, 173, 20, 0.6)" }}
+              >
                 <p className="box-text">
                   Taking Calls <BiPhoneCall />
                 </p>
@@ -41,12 +47,14 @@ const GuideHome = () => {
           </Col>
         </Row>
       </Container>
-
       <Container>
         <Row className="guide-row">
           <Col sm={5}>
             <Link to="/ticketescalation" style={{ textDecoration: "none" }}>
-              <div className="guide-box" style={{backgroundColor:'rgba(249, 67, 255, 0.63)'}}>
+              <div
+                className="guide-box"
+                style={{ backgroundColor: "rgba(249, 67, 255, 0.63)" }}
+              >
                 <p className="box-text">
                   Ticket Escalation <BiIdCard />
                 </p>
@@ -55,7 +63,10 @@ const GuideHome = () => {
           </Col>
           <Col sm={7}>
             <Link to="/issues" style={{ textDecoration: "none" }}>
-              <div className="guide-box" style={{backgroundColor:'rgba(255, 0, 0, 0.678)'}}>
+              <div
+                className="guide-box"
+                style={{ backgroundColor: "rgba(255, 0, 0, 0.678)" }}
+              >
                 <p className="box-text">
                   Common Issues and Solutions <BiError />
                 </p>
