@@ -55,11 +55,7 @@ const Resources = () => {
               Spreadsheets <BiBook />
             </h3>
             <div className="res-box-sheet">
-<<<<<<< HEAD
-              <a href="none">
-=======
               <a href='none'>
->>>>>>> f9665a1f63cadf9024862c05140c2b9a63472214
                 <BiSpreadsheet />
                 Test
               </a>
