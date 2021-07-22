@@ -2,10 +2,6 @@ import NavCard from "../Components/NavCard";
 import Footer from "../Components/Footer";
 import { Row, Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-=======
-
->>>>>>> f9665a1f63cadf9024862c05140c2b9a63472214
 import "./Home.css";
 import home1 from "../img/home2.png";
 import React, { Component } from "react";
