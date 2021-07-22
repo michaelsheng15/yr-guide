@@ -7,9 +7,6 @@ import { BiFolder } from "react-icons/bi";
 import { BiFile } from "react-icons/bi";
 import { BiBook } from "react-icons/bi";
 
-
-
-
 import { BiSpreadsheet } from "react-icons/bi";
 
 const Resources = () => {
@@ -28,46 +25,18 @@ const Resources = () => {
               Documents <BiFolder />
             </h3>
             <div className="res-box-doc">
-              <a><BiFile/>Test</a>
-            </div>
-            <div className="res-box-doc">
-              <a><BiFile/>Test</a>
-            </div>
-            <div className="res-box-doc">
-              <a><BiFile/>Test</a>
-            </div>
-            <div className="res-box-doc">
-              <a><BiFile/>Test</a>
-            </div>
-            <div className="res-box-doc">
-              <a><BiFile/>Test</a>
-            </div>
-            <div className="res-box-doc">
-              <a><BiFile/>Test</a>
+              <a href="none">
+                <BiFile />
+                Test
+              </a>
             </div>
           </Col>
           <Col>
-            <h3 className="res-sub-header">Spreadsheets <BiBook /></h3>
+            <h3 className="res-sub-header">
+              Spreadsheets <BiBook />
+            </h3>
             <div className="res-box-sheet">
-              <a>
-                <BiSpreadsheet />
-                Test
-              </a>
-            </div>
-            <div className="res-box-sheet">
-              <a>
-                <BiSpreadsheet />
-                Test
-              </a>
-            </div>
-            <div className="res-box-sheet">
-              <a>
-                <BiSpreadsheet />
-                Test
-              </a>
-            </div>
-            <div className="res-box-sheet">
-              <a>
+              <a href="none">
                 <BiSpreadsheet />
                 Test
               </a>
