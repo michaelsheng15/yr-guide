@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 import { BiAtom } from "react-icons/bi";
 
-
 import "./Home.css";
 import home1 from "../img/home2.png";
 
@@ -53,7 +52,7 @@ class Home extends Component {
                 <Modal show={this.state.show} handleClose={this.hideModal}>
                   <p>Modal</p>
                 </Modal>
-                <a className="btn" id='outline' onClick={this.showModal}>
+                <a className="btn" id="outline" onClick={this.showModal}>
                   About the Dev!
                 </a>
               </div>
