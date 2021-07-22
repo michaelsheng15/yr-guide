@@ -2,6 +2,10 @@ import NavCard from "../Components/NavCard";
 import Footer from "../Components/Footer";
 import { Row, Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9665a1f63cadf9024862c05140c2b9a63472214
 import "./Home.css";
 import home1 from "../img/home2.png";
 import React, { Component } from "react";
@@ -42,19 +46,38 @@ class Home extends Component {
 
               <div className="btn-container">
                 <Link to="/guides" style={{ textDecoration: "none" }}>
+<<<<<<< HEAD
                   <a className="btn" href='none'>Get Started!</a>
+=======
+                  <a className="btn" href="none">
+                    Get Started!
+                  </a>
+>>>>>>> f9665a1f63cadf9024862c05140c2b9a63472214
                 </Link>
 
                 <Modal show={this.state.show} handleClose={this.hideModal}>
                   <p>Modal</p>
                 </Modal>
+<<<<<<< HEAD
                 <a className="btn" id="outline" href='none' onClick={this.showModal}>
+=======
+                <a
+                  className="btn"
+                  id="outline"
+                  href="none"
+                  onClick={this.showModal}
+                >
+>>>>>>> f9665a1f63cadf9024862c05140c2b9a63472214
                   About the Dev!
                 </a>
               </div>
             </Col>
             <Col className="img-col">
+<<<<<<< HEAD
               <img src={home1} className="img" alt='home'/>
+=======
+              <img src={home1} className="img" alt="home img" />
+>>>>>>> f9665a1f63cadf9024862c05140c2b9a63472214
             </Col>
           </Row>
         </Container>

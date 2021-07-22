@@ -25,8 +25,27 @@ const Resources = () => {
               Documents <BiFolder />
             </h3>
             <div className="res-box-doc">
-              <a href="none">
-                <BiFile />
+              <a href='none'><BiFile/>Test</a>
+            </div>
+            
+          </Col>
+          <Col>
+            <h3 className="res-sub-header">Spreadsheets <BiBook /></h3>
+            <div className="res-box-sheet">
+              <a href='none'>
+                <BiSpreadsheet />
+                Test
+              </a>
+            </div>
+            <div className="res-box-sheet">
+              <a href='none'>
+                <BiSpreadsheet />
+                Test
+              </a>
+            </div>
+            <div className="res-box-sheet">
+              <a href='none'>
+                <BiSpreadsheet />
                 Test
               </a>
             </div>
@@ -36,7 +55,11 @@ const Resources = () => {
               Spreadsheets <BiBook />
             </h3>
             <div className="res-box-sheet">
+<<<<<<< HEAD
               <a href="none">
+=======
+              <a href='none'>
+>>>>>>> f9665a1f63cadf9024862c05140c2b9a63472214
                 <BiSpreadsheet />
                 Test
               </a>
