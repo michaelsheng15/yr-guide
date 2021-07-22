@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./NavCard.css";
 import { Link } from "react-router-dom";
-import { BiAtom } from "react-icons/bi";
 
 
 const NavCard = () => {

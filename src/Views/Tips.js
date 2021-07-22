@@ -5,11 +5,11 @@ import "./Tips.css";
 import NavCard from "../Components/NavCard";
 
 import { FiMonitor } from "react-icons/fi";
-import { FaLaptopCode } from "react-icons/fa";
+// import { FaLaptopCode } from "react-icons/fa";
 
-import { SiMicrosoftoutlook } from "react-icons/si";
-import { FiCoffee } from "react-icons/fi";
-import { FiFlag } from "react-icons/fi";
+// import { SiMicrosoftoutlook } from "react-icons/si";
+// import { FiCoffee } from "react-icons/fi";
+// import { FiFlag } from "react-icons/fi";
 import { IconContext } from "react-icons";
 
 const Tips = () => {

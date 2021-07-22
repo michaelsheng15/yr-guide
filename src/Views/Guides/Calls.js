@@ -3,7 +3,6 @@ import { Row, Col, Container } from "react-bootstrap";
 import "./Calls.css";
 
 import NavCard from "../../Components/NavCard";
-import { BiBookBookmark } from "react-icons/bi";
 import { BiDetail } from "react-icons/bi";
 
 const Calls = () => {

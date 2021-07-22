@@ -5,7 +5,6 @@ import "./Tools.css";
 import { BiGitPullRequest } from "react-icons/bi";
 import { BiCube } from "react-icons/bi";
 import { BiCollection } from "react-icons/bi";
-import { FiItalic } from "react-icons/fi";
 
 const Tools = () => {
   const request = [

@@ -28,46 +28,46 @@ const Resources = () => {
               Documents <BiFolder />
             </h3>
             <div className="res-box-doc">
-              <a><BiFile/>Test</a>
+              <a href='none'><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><BiFile/>Test</a>
+              <a href='none'><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><BiFile/>Test</a>
+              <a href='none'><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><BiFile/>Test</a>
+              <a href='none'><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><BiFile/>Test</a>
+              <a href='none'><BiFile/>Test</a>
             </div>
             <div className="res-box-doc">
-              <a><BiFile/>Test</a>
+              <a href='none'><BiFile/>Test</a>
             </div>
           </Col>
           <Col>
             <h3 className="res-sub-header">Spreadsheets <BiBook /></h3>
             <div className="res-box-sheet">
-              <a>
+              <a href='none'>
                 <BiSpreadsheet />
                 Test
               </a>
             </div>
             <div className="res-box-sheet">
-              <a>
+              <a href='none'>
                 <BiSpreadsheet />
                 Test
               </a>
             </div>
             <div className="res-box-sheet">
-              <a>
+              <a href='none'>
                 <BiSpreadsheet />
                 Test
               </a>
             </div>
             <div className="res-box-sheet">
-              <a>
+              <a href='none'>
                 <BiSpreadsheet />
                 Test
               </a>

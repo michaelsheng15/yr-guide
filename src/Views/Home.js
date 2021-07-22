@@ -3,8 +3,6 @@ import Footer from "../Components/Footer";
 import { Row, Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import { BiAtom } from "react-icons/bi";
-
 import "./Home.css";
 import home1 from "../img/home2.png";
 
@@ -46,19 +44,26 @@ class Home extends Component {
 
               <div className="btn-container">
                 <Link to="/guides" style={{ textDecoration: "none" }}>
-                  <a className="btn">Get Started!</a>
+                  <a className="btn" href="none">
+                    Get Started!
+                  </a>
                 </Link>
 
                 <Modal show={this.state.show} handleClose={this.hideModal}>
                   <p>Modal</p>
                 </Modal>
-                <a className="btn" id="outline" onClick={this.showModal}>
+                <a
+                  className="btn"
+                  id="outline"
+                  href="none"
+                  onClick={this.showModal}
+                >
                   About the Dev!
                 </a>
               </div>
             </Col>
             <Col className="img-col">
-              <img src={home1} className="img" />
+              <img src={home1} className="img" alt="home img" />
             </Col>
           </Row>
         </Container>
