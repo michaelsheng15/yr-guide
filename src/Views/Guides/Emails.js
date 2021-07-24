@@ -4,18 +4,25 @@ import "./Emails.css";
 import NavCard from "../../Components/NavCard";
 import { BiDetail } from "react-icons/bi";
 
+import email1 from "../../img/e1.png";
+import email2 from "../../img/e2.png";
+import email3 from "../../img/e3.png";
+import email4 from "../../img/e4.png";
+import email6 from "../../img/email6.png";
+
 const Emails = () => {
   const ticketGuide = [
     {
-      title: "Section 1: Name and Title",
+      title: <h3 className="mail-h">Section 1: Name and Title </h3>,
       tips: [
         "Format is lastname, firstname",
         "Keep title concise (my preferred title format is Asset Tag - Problem Statement/Error Message - Contact Information)",
       ],
       container: undefined,
+      img: email1,
     },
     {
-      title: "Section 2: Description",
+      title: <h3 className="mail-h">Section 2: Description</h3>,
       tips: [
         "Brainstorm possible solutions and mark each solution with result (successful/unsuccessful)",
         "Treat as your personal notepad and jot down any important notes, contact information or answers to your follow-up questions",
@@ -25,13 +32,18 @@ const Emails = () => {
         "Emails: Copy and paste email and surround with brackets",
         "Calls: Jot down important notes while client isdescribing issue",
       ],
+      img: email2,
     },
     {
-      title: "Section 3: Adding Template and Additional Information",
+      title: (
+        <h3 className="mail-h">
+          Section 3: Adding Template and Additional Information
+        </h3>
+      ),
       tips: [
         "Correct the auto-filled template to fit your situation",
-        "You can find the department the client works in by accessing the ____ tab",
-        "Assign the ticket to yourself and assign the department as servicedesk",
+        "You can find the department the client works in by accessing the \"York Customizations\" tab",
+        "Assign the ticket to yourself and assign the department as SC_ServiceDesk",
       ],
       container: (
         <Col>
@@ -54,9 +66,10 @@ const Emails = () => {
       ),
 
       bold: undefined,
+      img: email3
     },
     {
-      title: "Section 4: Affected Items and Comments",
+      title: <h3 className="mail-h">Section 4: Affected Items and Comments</h3>,
       tips: [
         "Enter the asset tag number of the affected devices",
         "General hardware such as docking stations and monitors can be found under the category Hardware Asset",
@@ -64,29 +77,33 @@ const Emails = () => {
       ],
       container: undefined,
       bold: undefined,
+      img: email4,
     },
     {
-      title: "Section 5: Resolution",
+      title: <h3 className="mail-h">Section 5: Resolution</h3>,
       tips: [
         "Resolution category will only be accessible after closing the ticket",
         "Determine the appropriate resolution category and input solution in resolution box",
       ],
       container: undefined,
+      img: email6,
     },
   ];
 
   const mailGuide = [
     {
-      title: "1: Take emails and organize inbox",
+      title: <h3 className="mail-h">#1: Take emails and organize inbox</h3>,
       tips: [
         "Drag emails from ITS inbox into your personal inbox (Items Taken By...)",
         "Keep inbox organized and mark ongoing emails with flags",
-        "TIP: Challenge yourself and look for emails containing unique issues",
       ],
       container: undefined,
+      bold:<b>TIP: Challenge yourself and look for emails containing unique issues</b>
     },
     {
-      title: "#2: Create ticket and brainstorm solutions",
+      title: (
+        <h3 className="mail-h">#2: Create ticket and brainstorm solutions</h3>
+      ),
       tips: [
         "See above guide on ticket creation",
         "Access scripts, internal and external resources to brainstorm a list of possible solutions",
@@ -95,7 +112,7 @@ const Emails = () => {
       bold: <b>STATUS: Mark ticket as "Work in Progress"</b>,
     },
     {
-      title: "#3: Schedule and complete callback",
+      title: <h3 className="mail-h">#3: Schedule and complete callback</h3>,
       tips: [
         "Send email back to client asking for availability and contact info",
         "Connect with client’s screen and attempt possible solutions (See escalation guide and escalate if appropriate)",
@@ -104,7 +121,7 @@ const Emails = () => {
       bold: <b>STATUS: Mark ticket as "Waiting on Customer"</b>,
     },
     {
-      title: "#4: Update and close ticket",
+      title: <h3 className="mail-h">#4: Update and close ticket</h3>,
       tips: [
         "Identify successful solution",
         "Update ticket with contact info and asset tag number",
@@ -121,7 +138,7 @@ const Emails = () => {
       <NavCard />
       <div className="mail-header">
         <h1>Tickets and Emails</h1>
-        <p>Sample</p>
+        <p>Creating effective tickets and efficiently taking emails</p>
       </div>
 
       {/* Emails Section */}
@@ -148,11 +165,12 @@ const Emails = () => {
           Ticket Creation Guide <BiDetail />
         </h3>
         <Container className="mail-container">
-          {ticketGuide.map(({ title, tips, container, bold }, i) => (
+          {ticketGuide.map(({ title, tips, container, img }, i) => (
             <Row className="mail-row">
-              <h3 className="mail-h" key={i}>
-                {title}
-              </h3>
+              {title}
+              <div className='mail-img-div'>
+                <img src={img}/>
+              </div>
 
               <Col>
                 <ol className="mail-ul">
@@ -194,9 +212,7 @@ const Emails = () => {
         <Container className="mail-container">
           {mailGuide.map(({ title, tips, container, bold }, i) => (
             <Row className="mail-row">
-              <h3 className="mail-h" key={i}>
-                {title}
-              </h3>
+              {title}
               <Col>
                 <ol className="mail-ul">
                   {tips.map((tip) => (
@@ -215,7 +231,3 @@ const Emails = () => {
 };
 
 export default Emails;
-
-{
-  /*  */
-}

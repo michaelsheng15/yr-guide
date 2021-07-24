@@ -5,11 +5,14 @@ import "./TicketEscalation.css";
 import NavCard from "../../Components/NavCard";
 import { BiDetail } from "react-icons/bi";
 import { BiBookBookmark } from "react-icons/bi";
+import { BiRightArrowAlt } from "react-icons/bi";
+
+
 
 const TicketEscalation = () => {
   const escGuide = [
     {
-      title: "#1: Deciding to Escalate",
+      title:<h3 className="esc-h">#1: Deciding to Escalate</h3>,
       points: [
         "Always start by connecting with the clients screen to gain a better understanding of the problem",
         "Complete inital troubleshooting by accessing scripts and old tickets",
@@ -19,39 +22,36 @@ const TicketEscalation = () => {
       container: undefined,
     },
     {
-      title: "#2: Essential Information and Escalation Location",
+      title: <h3 className="esc-h">#2: Essential Information and Escalation Location</h3>,
       points: [
         "Record client's contact information (Phone/Extension, Asset Tag)",
         "Copy and paste problem and attempted solutions into analyst comments",
         "Access scripts, old tickets or the provided escalation map to decide the department to escalate to.",
-        "Do NOT assign the ticket to anyone. Leave the Assign to box blank as the department will assign to a department specific analyst.",
+        "Leave the Assign to box blank as the department will assign to a department specific analyst.",
         "Mark ticket as Assigned",
       ],
       container: (
         <Col>
           <div className="terms-card">
-            <h6 className="card-h">Escalation Map</h6>
+            <h6 className="card-h">Department Escalation Map</h6>
             <p className="esc-p">
-              Community and Health Services {">"} SC_CHS_LSS
+              Community and Health Services <BiRightArrowAlt /> SC_CHS_LSS
             </p>
             <p className="esc-p">
-              Environmental {">"} SC_EnvrionmentalServices
+              Environmental <BiRightArrowAlt /> SC_EnvrionmentalServices
             </p>
             <p className="esc-p">
-              Transportation {">"} SC_TransportationServices
+              Transportation <BiRightArrowAlt /> SC_TransportationServices
             </p>
             <p className="esc-p">
-              CS/LCS/RapidCo/CAO/Finance/YTN {">"} SC_ServiceDesk2ndLevel
-            </p>
-            <p className="esc-p">
-              Hardware Specific Issues {">"} SC_ServiceDesk2ndLevel
+              Hardware Issues <BiRightArrowAlt /> SC_ServiceDesk2ndLevel
             </p>
           </div>
         </Col>
       ),
     },
     {
-      title: "#3: After Escalating",
+      title: <h3 className="esc-h">#3: After Escalating</h3>,
       points: [
         "Check up on ticket to make sure it has been ackowledged",
         "Follow-up with client on resolved tickets",
@@ -115,7 +115,7 @@ const TicketEscalation = () => {
         <Container className="esc-container">
           {escGuide.map(({ title, points, container }) => (
             <Row className="esc-row">
-              <h3 className="esc-h">{title}</h3>
+              {title}
 
               <Col>
                 <div className="esc-text">

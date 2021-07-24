@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Container, Card, Button } from "react-bootstrap";
 import NavCard from "../Components/NavCard";
+
 import "./Tools.css";
 import { BiGitPullRequest } from "react-icons/bi";
 import { BiCube } from "react-icons/bi";
@@ -31,6 +32,43 @@ const Tools = () => {
   ];
 
   const IT = [
+    {
+      title: "Active Directory",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      button: "Learn more",
+
+      title2: "Cisco Unity",
+      description2:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      button2: "Learn more",
+    },
+    {
+      title: "Dell Knowledge Base",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      button: "Learn more",
+
+      title2: "GoToSupport",
+      description2:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+
+      button2: "Learn more",
+    },
+    {
+      title: "Service Manager",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      button: "Learn more",
+
+      title2: "RC Viewer",
+      description2:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      button2: "Learn more",
+    },
+  ];
+
+  const apps = [
     {
       title: "Active Directory",
       description:
@@ -148,7 +186,7 @@ const Tools = () => {
           <h3 className="tools-sub-header">
             York Region Applications <BiCollection />
           </h3>
-          {IT.map((e) => (
+          {apps.map((e) => (
             <Row className="tools-row">
               <Col className="tools-col">
                 <Card className="tools-card">

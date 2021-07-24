@@ -4,6 +4,7 @@ import "./Tips.css";
 
 import NavCard from "../Components/NavCard";
 
+
 import { FiMonitor } from "react-icons/fi";
 import { FaLaptopCode } from "react-icons/fa";
 import { SiMicrosoftoutlook } from "react-icons/si";
