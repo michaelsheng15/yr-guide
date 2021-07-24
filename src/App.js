@@ -18,7 +18,7 @@ class App extends Component {
     let routes = (
       <Switch>
         <Route exact path="/home" component={Home} />
-        {/* <Route exact path="/guides" component={GuideHome} />
+        <Route exact path="/guides" component={GuideHome} />
         <Route exact path="/tools" component={Tools} />
         <Route exact path="/tips" component={Tips} />
         <Route exact path="/resources" component={Resources} />
@@ -26,7 +26,7 @@ class App extends Component {
         <Route exact path="/ticketescalation" component={TicketEscalation} />
         <Route exact path="/issues" component={Issues} />
         <Route exact path="/emails" component={Emails} />
-        <Route exact path="/calls" component={Calls} /> */}
+        <Route exact path="/calls" component={Calls} />
 
         <Route exact path="/">
           <Redirect to="/home" />

@@ -8,34 +8,45 @@ import { BiMessageSquareCheck } from "react-icons/bi";
 const Issues = () => {
   const issues = [
     {
-      issueTitle: "#1: Problem Description",
+      issueTitle: "#1: Password Reset",
       cause:
         "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
       solution: ["1", "2", "3"],
 
-      issueTitle2: "#2: Problem Description",
+      issueTitle2: "#2: Cannot open eDOCS or eDOCS files",
       cause2:
         "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
       solution2: ["1", "2", "3"],
     },
     {
-      issueTitle: "#3: Problem Description",
+      issueTitle: "#3: Cannot print to regional printer",
       cause:
         "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
       solution: ["1", "2", "3"],
 
-      issueTitle2: "#4: Problem Description",
+      issueTitle2: "#4: FTP service java required/blocked",
       cause2:
         "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
       solution2: ["1", "2", "3"],
     },
     {
-      issueTitle: "#5: Problem Description",
+      issueTitle: "#5: Outlook missing add-ins",
       cause:
         "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
       solution: ["1", "2", "3"],
 
-      issueTitle2: "#6: Problem Description",
+      issueTitle2: "#6: VPN unsuccessful domain name resolution",
+      cause2:
+        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
+      solution2: ["1", "2", "3"],
+    },
+    {
+      issueTitle: "#7: VPN login failed",
+      cause:
+        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
+      solution: ["1", "2", "3"],
+
+      issueTitle2: "#8: Dial tone in softphone during MS Teams call",
       cause2:
         "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
       solution2: ["1", "2", "3"],

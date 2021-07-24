@@ -15,6 +15,7 @@
 
 .mail-row {
   width: 100%;
+  margin: 20px 0px 20px 0px;
 }
 
 .mail-h {
@@ -26,6 +27,15 @@
 .mail-p {
   color: rgb(0, 0, 0);
   font-size: 14px;
+}
+
+.mail-ul{
+  padding-left: 20px;
+}
+
+.mail-ul li{
+  margin-bottom: 8px;
+  font-size: 15px;
 }
 
 .mail-card {

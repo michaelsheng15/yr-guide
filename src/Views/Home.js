@@ -53,7 +53,6 @@ class Home extends Component {
                 <a
                   className="btn"
                   id="outline"
-                  href="none"
                   onClick={this.showModal}
                 >
                   About the Dev!
