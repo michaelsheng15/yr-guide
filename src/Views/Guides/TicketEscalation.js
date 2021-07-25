@@ -7,12 +7,10 @@ import { BiDetail } from "react-icons/bi";
 import { BiBookBookmark } from "react-icons/bi";
 import { BiRightArrowAlt } from "react-icons/bi";
 
-
-
 const TicketEscalation = () => {
   const escGuide = [
     {
-      title:<h3 className="esc-h">#1: Deciding to Escalate</h3>,
+      title: <h3 className="esc-h">#1: Deciding to Escalate</h3>,
       points: [
         "Always start by connecting with the clients screen to gain a better understanding of the problem",
         "Complete inital troubleshooting by accessing scripts and old tickets",
@@ -22,13 +20,17 @@ const TicketEscalation = () => {
       container: undefined,
     },
     {
-      title: <h3 className="esc-h">#2: Essential Information and Escalation Location</h3>,
+      title: (
+        <h3 className="esc-h">
+          #2: Essential Information and Escalation Location
+        </h3>
+      ),
       points: [
         "Record client's contact information (Phone/Extension, Asset Tag)",
         "Copy and paste problem and attempted solutions into analyst comments",
-        "Access scripts, old tickets or the provided escalation map to decide the department to escalate to.",
-        "Leave the Assign to box blank as the department will assign to a department specific analyst.",
-        "Mark ticket as Assigned",
+        "Access scripts, old tickets or the provided escalation map to decide the department to escalate to",
+        "Leave the 'Assign to' box blank as the department will assign to a specific analyst.",
+        "Mark ticket as 'Assigned'",
       ],
       container: (
         <Col>
@@ -53,9 +55,10 @@ const TicketEscalation = () => {
     {
       title: <h3 className="esc-h">#3: After Escalating</h3>,
       points: [
-        "Check up on ticket to make sure it has been ackowledged",
+        "Check up on ticket to make sure it has been acknowledged",
         "Follow-up with client on resolved tickets",
-        "Stay updated with tickets assigned to you. Escalated tickets that have been resolved may be assigned back to you for you to follow-up and close",
+        "Stay updated with tickets assigned to you",
+        "Escalated tickets that have been resolved may be assigned back to you for you to follow-up and close",
       ],
       container: undefined,
     },

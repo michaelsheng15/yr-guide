@@ -58,7 +58,7 @@ const Issues = () => {
       <NavCard />
       <div className="issues-header">
         <h1>Common Issues and Solutions</h1>
-        <p>Solutions and causes to very common tickets</p>
+        <p>Solutions and causes to common tickets</p>
       </div>
 
       {issues.map(

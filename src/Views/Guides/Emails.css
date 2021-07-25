@@ -4,13 +4,14 @@
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .mail-container {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  padding: 30px;
+  padding: 0px 30px 30px 30px;
 }
 
 .mail-row {

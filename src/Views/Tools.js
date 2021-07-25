@@ -75,7 +75,7 @@ const Tools = () => {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       button: "Learn more",
 
-      title2: "Cisco Unity",
+      title2: "Cisco Finesse",
       description2:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       button2: "Learn more",
@@ -110,7 +110,7 @@ const Tools = () => {
       <NavCard />
       <div className="tools-header">
         <h1>Tools</h1>
-        <p>Tools and applications used across York Region departments.</p>
+        <p>An overview of the common tools and applications used across York Region.</p>
       </div>
 
       <Container className="tools-container">

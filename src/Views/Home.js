@@ -35,7 +35,7 @@ class Home extends Component {
               <h1 className="home-h">Welcome! 👋</h1>
               <p className="home-p">
                 Redeployed? Co-op student? New employee? This handbook provides
-                a collection of tools and resources to help you adapt quickly to
+                a collection of resources and notes from my personal experience to assist you in
                 your role as a Support Analyst
                 <span style={{ color: "rgb(4, 0, 255)" }}> @York Region</span>.
               </p>

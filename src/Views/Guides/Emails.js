@@ -9,29 +9,27 @@ import email2 from "../../img/e2.png";
 import email3 from "../../img/e3.png";
 import email4 from "../../img/e4.png";
 import email6 from "../../img/email6.png";
+import email7 from "../../img/e7.png";
 
 const Emails = () => {
   const ticketGuide = [
     {
-      title: <h3 className="mail-h">Section 1: Name and Title </h3>,
+      title: <h3 className="mail-h">Section 1: Affected User and Title </h3>,
       tips: [
-        "Format is lastname, firstname",
-        "Keep title concise (my preferred title format is Asset Tag - Problem Statement/Error Message - Contact Information)",
+        "Format is lastname, firstname (username)",
+        "Stick to theetitle format [Asset Tag] - [Problem Statement/Error Message] - [Contact Information]",
       ],
-      container: undefined,
       img: email1,
     },
     {
       title: <h3 className="mail-h">Section 2: Description</h3>,
       tips: [
-        "Brainstorm possible solutions and mark each solution with result (successful/unsuccessful)",
+        "Access resources to brainstorm possible solutions",
+        "After testing each solution, mark each solution with result (successful/unsuccessful)",
         "Treat as your personal notepad and jot down any important notes, contact information or answers to your follow-up questions",
+        "If you are creating a ticket for an email, copy and paste the email message between quotes",
       ],
-      container: undefined,
-      bold: [
-        "Emails: Copy and paste email and surround with brackets",
-        "Calls: Jot down important notes while client isdescribing issue",
-      ],
+
       img: email2,
     },
     {
@@ -41,8 +39,9 @@ const Emails = () => {
         </h3>
       ),
       tips: [
+        "Add the template fo the affected application by selecting 'Add Template' in the task bar",
         "Correct the auto-filled template to fit your situation",
-        "You can find the department the client works in by accessing the \"York Customizations\" tab",
+        'You can find the department the client works in by accessing the "York Customizations" tab',
         "Assign the ticket to yourself and assign the department as SC_ServiceDesk",
       ],
       container: (
@@ -53,31 +52,41 @@ const Emails = () => {
               <b>SC_ServiceDesk2ndLevel:</b> Hardware and OS
             </p>
             <p className="mail-p">
-              <b>SC_Network:</b> Drives and data services
+              <b>SC_Network:</b> Network drives and data services
             </p>
             <p className="mail-p">
-              <b>SC_eDOCS:</b> account access and eDOCS{" "}
+              <b>SC_eDOCS:</b> Account access and eDOCS{" "}
             </p>
             <p className="mail-p">
-              <b>SC_Blackberry{"&"}Cellular:</b> Mobile phones
+              <b>SC_Blackberry{"&"}Cellular:</b> Mobile phone issues
             </p>
           </div>
         </Col>
       ),
 
-      bold: undefined,
-      img: email3
+      img: email3,
     },
     {
       title: <h3 className="mail-h">Section 4: Affected Items and Comments</h3>,
       tips: [
-        "Enter the asset tag number of the affected devices",
+        "Enter the asset tag number of the affected device(s)",
         "General hardware such as docking stations and monitors can be found under the category Hardware Asset",
-        "Comments is where you can communicate with other analysts when esclating and aim to treat is as a progress tracker where you add comments during certain milestones",
+        "Printers are found under the 'Printer' category",
       ],
-      container: undefined,
-      bold: undefined,
+
       img: email4,
+    },
+    {
+      title: (
+        <h3 className="mail-h">Section 5: Analyst Comments and Action Log</h3>
+      ),
+      tips: [
+        "Any comments you add will be sent to the affected user",
+        "Use this section to provide progress updates (ex. 'Sent client callback email' or 'Scheduled callback for...')",
+        "When escalating, other analysts will add progress updates and tasks completed to the action log",
+      ],
+
+      img: email7,
     },
     {
       title: <h3 className="mail-h">Section 5: Resolution</h3>,
@@ -97,8 +106,11 @@ const Emails = () => {
         "Drag emails from ITS inbox into your personal inbox (Items Taken By...)",
         "Keep inbox organized and mark ongoing emails with flags",
       ],
-      container: undefined,
-      bold:<b>TIP: Challenge yourself and look for emails containing unique issues</b>
+      bold: (
+        <b>
+          TIP: Challenge yourself and look for emails containing unique issues
+        </b>
+      ),
     },
     {
       title: (
@@ -106,18 +118,17 @@ const Emails = () => {
       ),
       tips: [
         "See above guide on ticket creation",
-        "Access scripts, internal and external resources to brainstorm a list of possible solutions",
+        "Access scripts, old tickets to brainstorm a list of possible solutions",
+        "Don't be afraid to ask for help if you cannot find a solution",
       ],
-      container: undefined,
       bold: <b>STATUS: Mark ticket as "Work in Progress"</b>,
     },
     {
       title: <h3 className="mail-h">#3: Schedule and complete callback</h3>,
       tips: [
         "Send email back to client asking for availability and contact info",
-        "Connect with client’s screen and attempt possible solutions (See escalation guide and escalate if appropriate)",
+        "Connect with client’s screen and attempt possible solutions (See escalation guide and escalate if appropriate)", 
       ],
-      container: undefined,
       bold: <b>STATUS: Mark ticket as "Waiting on Customer"</b>,
     },
     {
@@ -126,9 +137,8 @@ const Emails = () => {
         "Identify successful solution",
         "Update ticket with contact info and asset tag number",
         "Fill in resolution with successful solution and select resolution type",
-        "Mark email with a checkmark",
+        "Mark email in inbox with a checkmark",
       ],
-      container: undefined,
       bold: <b>STATUS: Mark ticket as "Closed"</b>,
     },
   ];
@@ -165,19 +175,20 @@ const Emails = () => {
           Ticket Creation Guide <BiDetail />
         </h3>
         <Container className="mail-container">
-          {ticketGuide.map(({ title, tips, container, img }, i) => (
+          {ticketGuide.map(({ title, tips, container, img, bold }, i) => (
             <Row className="mail-row">
               {title}
-              <div className='mail-img-div'>
-                <img src={img}/>
+              <div className="mail-img-div">
+                <img src={img} />
               </div>
 
               <Col>
-                <ol className="mail-ul">
+                {bold}
+                <ul className="mail-ul">
                   {tips.map((tip) => (
                     <li className="mail-p">{tip}</li>
                   ))}
-                </ol>
+                </ul>
               </Col>
               {container}
             </Row>
@@ -214,11 +225,11 @@ const Emails = () => {
             <Row className="mail-row">
               {title}
               <Col>
-                <ol className="mail-ul">
+                <ul className="mail-ul">
                   {tips.map((tip) => (
                     <li className="mail-p">{tip}</li>
                   ))}
-                </ol>
+                </ul>
                 <p className="mail-p">{bold}</p>
               </Col>
               {container}
