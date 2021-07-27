@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/https//michaelsheng15.github.io/yr-guide/static/css/main.ed8916b3.chunk.css",
+    "main.js": "/https//michaelsheng15.github.io/yr-guide/static/js/main.8cbf77c5.chunk.js",
+    "main.js.map": "/https//michaelsheng15.github.io/yr-guide/static/js/main.8cbf77c5.chunk.js.map",
+    "runtime-main.js": "/https//michaelsheng15.github.io/yr-guide/static/js/runtime-main.928fe327.js",
+    "runtime-main.js.map": "/https//michaelsheng15.github.io/yr-guide/static/js/runtime-main.928fe327.js.map",
+    "static/css/2.fb17aa6d.chunk.css": "/https//michaelsheng15.github.io/yr-guide/static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.6c730930.chunk.js": "/https//michaelsheng15.github.io/yr-guide/static/js/2.6c730930.chunk.js",
+    "static/js/2.6c730930.chunk.js.map": "/https//michaelsheng15.github.io/yr-guide/static/js/2.6c730930.chunk.js.map",
+    "static/js/3.24f26010.chunk.js": "/https//michaelsheng15.github.io/yr-guide/static/js/3.24f26010.chunk.js",
+    "static/js/3.24f26010.chunk.js.map": "/https//michaelsheng15.github.io/yr-guide/static/js/3.24f26010.chunk.js.map",
+    "index.html": "/https//michaelsheng15.github.io/yr-guide/index.html",
+    "static/css/2.fb17aa6d.chunk.css.map": "/https//michaelsheng15.github.io/yr-guide/static/css/2.fb17aa6d.chunk.css.map",
+    "static/css/main.ed8916b3.chunk.css.map": "/https//michaelsheng15.github.io/yr-guide/static/css/main.ed8916b3.chunk.css.map",
+    "static/js/2.6c730930.chunk.js.LICENSE.txt": "/https//michaelsheng15.github.io/yr-guide/static/js/2.6c730930.chunk.js.LICENSE.txt",
+    "static/media/e2.e29c1637.png": "/https//michaelsheng15.github.io/yr-guide/static/media/e2.e29c1637.png",
+    "static/media/e3.f79e1034.png": "/https//michaelsheng15.github.io/yr-guide/static/media/e3.f79e1034.png",
+    "static/media/e4.f6b2a129.png": "/https//michaelsheng15.github.io/yr-guide/static/media/e4.f6b2a129.png",
+    "static/media/e7.af3b5c28.png": "/https//michaelsheng15.github.io/yr-guide/static/media/e7.af3b5c28.png",
+    "static/media/home2.8c776ea0.png": "/https//michaelsheng15.github.io/yr-guide/static/media/home2.8c776ea0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.928fe327.js",
+    "static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.6c730930.chunk.js",
+    "static/css/main.ed8916b3.chunk.css",
+    "static/js/main.8cbf77c5.chunk.js"
+  ]
+}
