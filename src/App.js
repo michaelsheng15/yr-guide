@@ -28,14 +28,14 @@ class App extends Component {
         <Route exact path="/emails" component={Emails} />
         <Route exact path="/calls" component={Calls} />
 
-        <Route exact path="/">
+        {/* <Route exact path="/">
           <Redirect to="/home" />
-        </Route>
+        </Route> */}
       </Switch>
     );
 
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={'yr-guide'}>
         <div>{routes}</div>
       </BrowserRouter>
     );
