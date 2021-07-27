@@ -9,7 +9,7 @@
 .issues-container {
   display: flex;
   flex-direction: column;
-  width: 1000px;
+  width: 1100px;
   margin: 30px auto auto auto;
   padding: 15px;
 }
@@ -20,14 +20,15 @@
 }
 
 .issues-h {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 15px;
+  
 }
 
 .issues-p {
   color: rgb(0, 0, 0);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .issues-text-box {
@@ -37,6 +38,7 @@
   box-shadow: 0 4px 8px 0 rgba(209, 209, 209, 0.6),
     0 6px 20px 0 rgba(209, 209, 209, 0.6);
   transition: box-shadow 0.3s;
+  margin: 5px;
 }
 
 .issues-text-box:hover {
@@ -46,10 +48,11 @@
 
 .issues-sub-h {
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 650;
 }
 
 .issues-p ol {
   padding-left: 16px;
 }
+

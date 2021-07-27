@@ -8,48 +8,100 @@ import { BiMessageSquareCheck } from "react-icons/bi";
 const Issues = () => {
   const issues = [
     {
-      issueTitle: "#1: Password Reset",
-      cause:
-        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
-      solution: ["1", "2", "3"],
+      issueTitle: "#1: Reset expired password",
 
-      issueTitle2: "#2: Cannot open eDOCS or eDOCS files",
-      cause2:
-        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
-      solution2: ["1", "2", "3"],
+      solution: [
+        "Go to unlock.york.ca",
+        "Enter current username and password in sign in box",
+        "Follow instructions to create new password",
+        "Connect to VPN using new password",
+        "CTRL+ALT+DEL > lock screen > sign in using new password",
+      ],
+
+      issueTitle2: "#2: Unable to open/check-in eDOCS documents",
+
+      solution2: [
+        "Close of office applications and eDOCS DM from task manager",
+        "Go to file ___",
+        "Run dmreset.bat",
+        "Open eDOCS from desktop icon to create local file",
+        "Check in/open documents",
+      ],
     },
     {
       issueTitle: "#3: Cannot print to regional printer",
-      cause:
-        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
-      solution: ["1", "2", "3"],
+
+      solution: [
+        "Control Panel > Hardware and Devices > Add Printer",
+        "When adding printer, select “Printer not listed” and search by printer number",
+        "Enter asset tag of printer",
+        "Connect to printer",
+        "Print test page from Settings",
+      ],
 
       issueTitle2: "#4: FTP service java required/blocked",
-      cause2:
-        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
-      solution2: ["1", "2", "3"],
+
+      solution2: [
+        "Go to official Java website and download Java for Windows",
+        "Follow steps in wizard",
+        "Control Panel > Java > Security > Add https//:ftp.york.ca/ to allowed sites",
+        "Open FTP in Internet Explorer",
+      ],
     },
     {
       issueTitle: "#5: Outlook missing add-ins",
-      cause:
-        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
-      solution: ["1", "2", "3"],
+
+      solution: [
+        "File > Options > Add-Ins",
+        "If add-in is “disabled” then enter “disabled add-ins” section and activate add-in",
+        "Go to “COM Add-ins” and checkmark desired add-in",
+        "Restart Outlook",
+      ],
 
       issueTitle2: "#6: VPN unsuccessful domain name resolution",
-      cause2:
-        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
-      solution2: ["1", "2", "3"],
+
+      solution2: [
+        "Open to Command Prompt",
+        "Enter command 'domain flushdns",
+        "Restart computer and connect to VPN",
+      ],
     },
     {
-      issueTitle: "#7: VPN login failed",
-      cause:
-        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
-      solution: ["1", "2", "3"],
+      issueTitle: "#7: Headset not working in softphone",
+
+      solution: [
+        "Preferences > Audio > Select USB Device or Headset name for all audio outputs",
+        "Complete Audio Tuning Wizard and play test sounds",
+        "Complete test call",
+      ],
 
       issueTitle2: "#8: Dial tone in softphone during MS Teams call",
-      cause2:
-        "Ticket escalation is a cross-departmental process that involves sending certain tickets to their appropriate departments for further support.",
-      solution2: ["1", "2", "3"],
+
+      solution2: [
+        "Install Jabra Direct for headsets",
+        "Check for software updates in audio and headset drivers",
+        "Complete test calls",
+      ],
+    },
+    {
+      issueTitle: "#9: Laptop unable to connect to network",
+
+      solution: [
+        "End Outlook task from task manager",
+        "Control Panel > Credential Manager > Generic Credentials > Clear all generic credentials",
+        "Restart machine",
+      ],
+
+      issueTitle2: "#10: Outlook not connecting to exchange server",
+
+      solution2: [
+        "Ask user to use a wired connection or hotspot",
+        "Connect to screen using GoToSupport",
+        "Go to System Information do find model of laptop",
+        "Go to Dell Knowledge Base and install the network driver for device",
+        "Run through steps in wizard to install/update current driver",
+        "Restart machine and disconnect wired connection test wireless connection",
+      ],
     },
   ];
 
@@ -61,57 +113,46 @@ const Issues = () => {
         <p>Solutions and causes to common tickets</p>
       </div>
 
-      {issues.map(
-        (
-          { issueTitle, issueTitle2, cause, cause2, solution, solution2 },
-          i
-        ) => (
-          <Container className="issues-container">
-            <Row className="issues-row">
-              <Col>
-                <div className="issues-text-box" key={i}>
-                  <h3 className="issues-h">{issueTitle}</h3>
-                  <h3 className="issues-sub-h">
-                    <BiMessageSquareError /> Cause:
-                  </h3>
+      {issues.map(({ issueTitle, issueTitle2, solution, solution2 }, i) => (
+        <Container className="issues-container">
+          <Row className="issues-row">
+            <Col>
+              <div className="issues-text-box" key={i}>
+                <h3 className="issues-h">{issueTitle}</h3>
 
-                  <p className="issues-p">{cause}</p>
-                  <h3 className="issues-sub-h">
-                    <BiMessageSquareCheck /> Solution:
-                  </h3>
+                <h3 className="issues-sub-h">
+                  <BiMessageSquareCheck /> Solution:
+                </h3>
 
-                  <p className="issues-p">
-                    <ol>
-                      {solution.map((solution, j) => (
-                        <li key={j}>{solution}</li>
-                      ))}
-                    </ol>
-                  </p>
-                </div>
-              </Col>
-              <Col>
-                <div className="issues-text-box">
-                  <h3 className="issues-h">{issueTitle2}</h3>
-                  <h3 className="issues-sub-h">
-                    <BiMessageSquareError /> Cause:
-                  </h3>
+                <p className="issues-p">
+                  <ol>
+                    {solution.map((solution, j) => (
+                      <li key={j}>{solution}</li>
+                    ))}
+                  </ol>
+                </p>
+              </div>
+            </Col>
+            <Col>
+              <div className="issues-text-box">
+                <h3 className="issues-h">{issueTitle2}</h3>
 
-                  <p className="issues-p">{cause2}</p>
-                  <h3 className="issues-sub-h">
-                    <BiMessageSquareCheck /> Solution:
-                  </h3>
+                <h3 className="issues-sub-h">
+                  <BiMessageSquareCheck /> Solution:
+                </h3>
 
-                  <p className="issues-p">
-                    <ol>{solution2.map((solution, j) => (
-                        <li key={j}>{solution}</li>
-                      ))}</ol>
-                  </p>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        )
-      )}
+                <p className="issues-p">
+                  <ol>
+                    {solution2.map((solution, j) => (
+                      <li key={j}>{solution}</li>
+                    ))}
+                  </ol>
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      ))}
     </div>
   );
 };

@@ -1,9 +1,14 @@
 .footer-container {
-  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-width: 80%;
+  width: 87%;
 }
 
-.footer-row{
-  width: 95%;
+.footer-row {
+  width: 100%;
   margin-top: 3%;
 }
 
@@ -18,26 +23,24 @@
   margin-right: 12px;
 }
 
-.logo-col{
+.logo-col {
   margin-bottom: 1rem;
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
 
-.text-col{
+.text-col {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
 }
 
-.name{
+.name {
   color: rgb(234, 0, 255);
 }
 
-.footer-p{
+.footer-p {
   font-size: 15px;
 }
-

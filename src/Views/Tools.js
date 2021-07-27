@@ -16,7 +16,7 @@ const Tools = () => {
       button: "Go to request",
 
       title2: "ITSR/Jira",
-      description2: "Request system for",
+      description2: "Request system for all non CHS, ENV and TRN employees.",
       button2: "Go to request",
     },
     {
@@ -35,70 +35,81 @@ const Tools = () => {
     {
       title: "Active Directory",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "A directory of all York Region accounts used to view account status, reset password, view security groups and more.",
       button: "Learn more",
 
-      title2: "Cisco Unity",
+      title2: "Cisco Finesse",
       description2:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "An agent integrated with your softphone where you set your work status, monitor the phone queue and view call statistics.",
       button2: "Learn more",
     },
     {
       title: "Dell Knowledge Base",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "A database of technical support articles and guides for Dell computers, mainly used in driver installation and updates.",
       button: "Learn more",
 
       title2: "GoToSupport",
       description2:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "An external support tool used to view and control a clients screen. Can be used when client is not connected to York Region network",
 
       button2: "Learn more",
     },
     {
       title: "Service Manager",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "An application used to create, monitor and escalate incident tickets.",
       button: "Learn more",
 
       title2: "RC Viewer",
       description2:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "An internal support tool used to control a clients screen. Can only be used when client is connected to York Region network.",
       button2: "Learn more",
     },
   ];
 
   const apps = [
     {
-      title: "Active Directory",
+      title: "Cisco AnyConnect Client",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       button: "Learn more",
 
-      title2: "Cisco Finesse",
+      title2: "Cisco IP Communicator",
       description2:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       button2: "Learn more",
     },
     {
-      title: "Dell Knowledge Base",
+      title: "Citrix",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       button: "Learn more",
 
-      title2: "GoToSupport",
+      title2: "FTP Service",
       description2:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
 
       button2: "Learn more",
     },
     {
-      title: "Service Manager",
+      title: "Microsoft Teams",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       button: "Learn more",
 
-      title2: "RC Viewer",
+      title2: "Outlook",
+      description2:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      button2: "Learn more",
+    },
+    {
+      title: "ROSIE",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      button: "Learn more",
+
+      title2: "ROSIE",
       description2:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       button2: "Learn more",
