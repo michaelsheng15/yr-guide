@@ -72,46 +72,46 @@ const Tools = () => {
     {
       title: "Cisco AnyConnect Client",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "A VPN client used to connect to York Region network to access regional tools and applications.",
       button: "Learn more",
 
       title2: "Cisco IP Communicator",
       description2:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "A desktop phone that can be used to communicate with internal regional employees and external callers.",
       button2: "Learn more",
     },
     {
       title: "Citrix",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "A desktop client used to access York Region tools and applications without connecting to regional network.",
       button: "Learn more",
 
       title2: "FTP Service",
       description2:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "An online service used to send large files over emails that exceed Outlook attachment size limits.",
 
       button2: "Learn more",
     },
     {
-      title: "Microsoft Teams",
+      title: "InforXM",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "An online tool used by York Region employees to submit forms for reinbursable expenses.",
       button: "Learn more",
 
-      title2: "Outlook",
+      title2: "Microsoft Teams",
       description2:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "The main method of communication with coworkers through private messaging and team meetings.",
       button2: "Learn more",
     },
     {
-      title: "ROSIE",
+      title: "Outlook",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "Primary email application for all York Region employees.",
       button: "Learn more",
 
       title2: "ROSIE",
       description2:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "A self-service tools used to view employee information, payroll benefits, online courses and more.",
       button2: "Learn more",
     },
   ];
