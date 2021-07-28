@@ -10,36 +10,56 @@ import Tools from "./Views/Tools";
 import Tips from "./Views/Tips";
 import Resources from "./Views/Resources";
 
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import React, { Component } from "react";
 
-class App extends Component {
-  render() {
-    let routes = (
+// class App extends Component {
+// render() {
+//   let routes = (
+//     <Switch>
+//       <Route exact path="/home" component={Home} />
+//       <Route exact path="/guides" component={GuideHome} />
+//       <Route exact path="/tools" component={Tools} />
+//       <Route exact path="/tips" component={Tips} />
+//       <Route exact path="/resources" component={Resources} />
+//       <Route exact path="/ticketescalation" component={TicketEscalation} />
+//       <Route exact path="/issues" component={Issues} />
+//       <Route exact path="/emails" component={Emails} />
+//       <Route exact path="/calls" component={Calls} />
+
+//       <Route exact path="/">
+//         <Redirect to="/home" />
+//       </Route>
+//     </Switch>
+//   );
+
+//   return (
+//     <Router>
+//       <div>{routes}</div>
+//     </Router>
+//   );
+// }
+// }
+
+function App() {
+  return (
+    <Router>
       <Switch>
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/guides" component={GuideHome} />
         <Route exact path="/tools" component={Tools} />
         <Route exact path="/tips" component={Tips} />
         <Route exact path="/resources" component={Resources} />
-
         <Route exact path="/ticketescalation" component={TicketEscalation} />
         <Route exact path="/issues" component={Issues} />
         <Route exact path="/emails" component={Emails} />
         <Route exact path="/calls" component={Calls} />
-
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
       </Switch>
-    );
-
-    return (
-      <BrowserRouter>
-        <div>{routes}</div>
-      </BrowserRouter>
-    );
-  }
+    </Router>
+  );
 }
-
 export default App;

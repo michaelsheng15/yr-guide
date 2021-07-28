@@ -7,7 +7,7 @@ const NavCard = () => {
   return (
     <Container className="nav-container">
       <Row className='nav-row'>
-        <Link to="/home" style={{ textDecoration: "none" }}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <p className="large">ITS Handbook 🚀</p>
         </Link>
       </Row>
