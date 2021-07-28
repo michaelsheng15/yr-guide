@@ -122,11 +122,11 @@ const TicketEscalation = () => {
 
               <Col>
                 <div className="esc-text">
-                  <ol>
+                  <ul>
                     {points.map((e) => (
                       <li className="esc-p">{e}</li>
                     ))}
-                  </ol>
+                  </ul>
                 </div>
               </Col>
               {container}

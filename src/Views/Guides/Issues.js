@@ -2,13 +2,12 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./Issues.css";
 import NavCard from "../../Components/NavCard";
-import { BiMessageSquareError } from "react-icons/bi";
 import { BiMessageSquareCheck } from "react-icons/bi";
 
 const Issues = () => {
   const issues = [
     {
-      issueTitle: "#1: Reset expired password",
+      issueTitle: "Reset expired password",
 
       solution: [
         "Go to unlock.york.ca",
@@ -18,7 +17,7 @@ const Issues = () => {
         "CTRL+ALT+DEL > lock screen > sign in using new password",
       ],
 
-      issueTitle2: "#2: Unable to open/check-in eDOCS documents",
+      issueTitle2: "Unable to open/check-in eDOCS documents",
 
       solution2: [
         "Close of office applications and eDOCS DM from task manager",
@@ -29,7 +28,7 @@ const Issues = () => {
       ],
     },
     {
-      issueTitle: "#3: Cannot print to regional printer",
+      issueTitle: "Cannot print to regional printer",
 
       solution: [
         "Control Panel > Hardware and Devices > Add Printer",
@@ -39,7 +38,7 @@ const Issues = () => {
         "Print test page from Settings",
       ],
 
-      issueTitle2: "#4: FTP service java required/blocked",
+      issueTitle2: "FTP service Java required/blocked",
 
       solution2: [
         "Go to official Java website and download Java for Windows",
@@ -49,7 +48,7 @@ const Issues = () => {
       ],
     },
     {
-      issueTitle: "#5: Outlook missing add-ins",
+      issueTitle: "Outlook missing add-ins",
 
       solution: [
         "File > Options > Add-Ins",
@@ -58,7 +57,7 @@ const Issues = () => {
         "Restart Outlook",
       ],
 
-      issueTitle2: "#6: VPN unsuccessful domain name resolution",
+      issueTitle2: "VPN unsuccessful domain name resolution",
 
       solution2: [
         "Open to Command Prompt",
@@ -67,7 +66,7 @@ const Issues = () => {
       ],
     },
     {
-      issueTitle: "#7: Headset not working in softphone",
+      issueTitle: "Headset not working in softphone",
 
       solution: [
         "Preferences > Audio > Select USB Device or Headset name for all audio outputs",
@@ -75,7 +74,7 @@ const Issues = () => {
         "Complete test call",
       ],
 
-      issueTitle2: "#8: Dial tone in softphone during MS Teams call",
+      issueTitle2: "Dial tone in softphone during MS Teams call",
 
       solution2: [
         "Install Jabra Direct for headsets",
@@ -84,7 +83,7 @@ const Issues = () => {
       ],
     },
     {
-      issueTitle: "#9: Laptop unable to connect to network",
+      issueTitle: "Laptop unable to connect to network",
 
       solution: [
         "End Outlook task from task manager",
@@ -92,7 +91,7 @@ const Issues = () => {
         "Restart machine",
       ],
 
-      issueTitle2: "#10: Outlook not connecting to exchange server",
+      issueTitle2: "Outlook not connecting to exchange server",
 
       solution2: [
         "Ask user to use a wired connection or hotspot",
@@ -113,21 +112,21 @@ const Issues = () => {
         <p>Solutions and causes to common tickets</p>
       </div>
 
-      {issues.map(({ issueTitle, issueTitle2, solution, solution2 }, i) => (
+      {issues.map(({ issueTitle, issueTitle2, solution, solution2 }) => (
         <Container className="issues-container">
           <Row className="issues-row">
             <Col>
-              <div className="issues-text-box" key={i}>
+              <div className="issues-text-box" >
                 <h3 className="issues-h">{issueTitle}</h3>
 
                 <h3 className="issues-sub-h">
-                  <BiMessageSquareCheck /> Solution:
+                  <BiMessageSquareCheck/> Solution:
                 </h3>
 
                 <p className="issues-p">
                   <ol>
-                    {solution.map((solution, j) => (
-                      <li key={j}>{solution}</li>
+                    {solution.map((solution) => (
+                      <li className="issues-li">{solution}</li>
                     ))}
                   </ol>
                 </p>
@@ -143,8 +142,8 @@ const Issues = () => {
 
                 <p className="issues-p">
                   <ol>
-                    {solution2.map((solution, j) => (
-                      <li key={j}>{solution}</li>
+                    {solution2.map((solution) => (
+                      <li className="issues-li">{solution}</li>
                     ))}
                   </ol>
                 </p>

@@ -35,7 +35,7 @@ class App extends Component {
     );
 
     return (
-      <BrowserRouter basename={'yr-guide'}>
+      <BrowserRouter>
         <div>{routes}</div>
       </BrowserRouter>
     );
