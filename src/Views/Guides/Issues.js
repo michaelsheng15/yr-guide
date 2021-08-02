@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./Issues.css";
 import NavCard from "../../Components/NavCard";
+
 import { BiMessageSquareCheck } from "react-icons/bi";
 
 const Issues = () => {

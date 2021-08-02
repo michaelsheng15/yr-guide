@@ -3,6 +3,8 @@ import { Row, Col, Container } from "react-bootstrap";
 import "./Tips.css";
 
 import NavCard from "../Components/NavCard";
+import PageFooter from "../Components/PageFooter";
+
 
 
 import { FiMonitor } from "react-icons/fi";
@@ -71,6 +73,7 @@ const Tips = () => {
           </Row>
         </Container>
       ))}
+      <PageFooter />
     </div>
   );
 };

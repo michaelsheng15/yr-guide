@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import NavCard from "../Components/NavCard";
+import PageFooter from "../Components/PageFooter";
+
 
 import "./Resources.css";
 
@@ -15,13 +17,13 @@ const Resources = () => {
     <div>
       <NavCard />
       <div className="res-header">
-        <h1>Resources</h1>
+        <h1>Resources (CURRENTLY IN DEVELOPMENT)</h1>
         <p>Helpful documents and links.</p>
       </div>
 
       <Container className="res-container">
         <Row className="res-row">
-          <Col className="res-col">
+          {/* <Col className="res-col">
             <h3 className="res-sub-header">
               Documents <BiFolder />
             </h3>
@@ -40,9 +42,13 @@ const Resources = () => {
                 Test
               </a>
             </div>
-          </Col>
+          </Col> */}
+
+
+          
         </Row>
       </Container>
+
     </div>
   );
 };

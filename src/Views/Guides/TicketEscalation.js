@@ -16,6 +16,7 @@ const TicketEscalation = () => {
         "Complete inital troubleshooting by accessing scripts and old tickets",
         "Record all attemped solutions and their results (Ex.eDOCS DMreset > unsuccessful)",
         "Be detailed and concise in description of problem",
+        "After completing ALL possible troubleshooting and a solution still cannot be found, begin preparing to escalate"
       ],
       container: undefined,
     },
@@ -27,9 +28,9 @@ const TicketEscalation = () => {
       ),
       points: [
         "Record client's contact information (Phone/Extension, Asset Tag)",
-        "Copy and paste problem and attempted solutions into analyst comments",
+        "Enter a deatiled description of clients problem and all completed troubleshooting in the analyst comments",
         "Access scripts, old tickets or the provided escalation map to decide the department to escalate to",
-        "Leave the 'Assign to' box blank as the department will assign to a specific analyst.",
+        "Leave the 'Assigned to' box blank as the department will assign to a specific analyst.",
         "Mark ticket as 'Assigned'",
       ],
       container: (
@@ -95,7 +96,7 @@ const TicketEscalation = () => {
                 Key Terms <BiBookBookmark />
               </h6>
               <p className="esc-p">
-                <strong>LSS/FSS:</strong> Field Support Specialist
+                <strong>LSS/FSS:</strong> Local System Support and Field Support Specialist
               </p>
               <p className="esc-p">
                 <strong> Prime and Secondary Support:</strong> Script

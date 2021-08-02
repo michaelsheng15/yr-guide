@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col, Container, Card, Button } from "react-bootstrap";
 import NavCard from "../Components/NavCard";
+import PageFooter from "../Components/PageFooter";
+
 
 import "./Tools.css";
 import { BiGitPullRequest } from "react-icons/bi";
@@ -223,6 +225,7 @@ const Tools = () => {
           ))}
         </div>
       </Container>
+      <PageFooter/>
     </div>
   );
 };

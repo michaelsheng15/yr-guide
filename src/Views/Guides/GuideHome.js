@@ -2,6 +2,8 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./GuideHome.css";
 import NavCard from "../../Components/NavCard";
+import PageFooter from "../../Components/PageFooter";
+
 import { Link } from "react-router-dom";
 
 import { BiMailSend } from "react-icons/bi";
@@ -75,6 +77,7 @@ const GuideHome = () => {
           </Col>
         </Row>
       </Container>
+      <PageFooter />
     </div>
   );
 };

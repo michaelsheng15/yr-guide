@@ -11,22 +11,27 @@ import email4 from "../../img/e4.png";
 import email6 from "../../img/email6.png";
 import email7 from "../../img/e7.png";
 
+import e6 from "../../img/6.png";
+import e4 from "../../img/4.png";
+import e3 from "../../img/3.png";
+import e5 from "../../img/5.png";
+
 const Emails = () => {
   const ticketGuide = [
     {
       title: <h3 className="mail-h">Section 1: Affected User and Title </h3>,
       tips: [
         "Format is lastname, firstname (username)",
-        "Stick to theetitle format [Asset Tag] - [Problem Statement/Error Message] - [Contact Information]",
+        "Stick to the title format [Asset Tag] - [Affected App] - [Problem Statement/Error Message] - [Contact Information]",
       ],
       img: email1,
     },
     {
       title: <h3 className="mail-h">Section 2: Description</h3>,
       tips: [
-        "Access resources to brainstorm possible solutions",
+        "The description should be treated as your personal notepad and jot down any important notes, contact information or answers to your follow-up questions",
+        "Access resources and brainstorm possible solution",
         "After testing each solution, mark each solution with result (successful/unsuccessful)",
-        "Treat as your personal notepad and jot down any important notes, contact information or answers to your follow-up questions",
         "If you are creating a ticket for an email, copy and paste the email message between quotes",
       ],
 
@@ -39,7 +44,7 @@ const Emails = () => {
         </h3>
       ),
       tips: [
-        "Add the template fo the affected application by selecting 'Add Template' in the task bar",
+        "Add the template of the affected application by selecting 'Add Template' in the task bar",
         "Correct the auto-filled template to fit your situation",
         'You can find the department the client works in by accessing the "York Customizations" tab',
         "Assign the ticket to yourself and assign the department as SC_ServiceDesk",
@@ -70,7 +75,7 @@ const Emails = () => {
       title: <h3 className="mail-h">Section 4: Affected Items and Comments</h3>,
       tips: [
         "Enter the asset tag number of the affected device(s)",
-        "General hardware such as docking stations and monitors can be found under the category Hardware Asset",
+        "General hardware such as docking stations and monitors can be found under the category 'Hardware Asset'",
         "Printers are found under the 'Printer' category",
       ],
 
@@ -83,7 +88,7 @@ const Emails = () => {
       tips: [
         "Any comments you add will be sent to the affected user",
         "Use this section to provide progress updates (ex. 'Sent client callback email' or 'Scheduled callback for...')",
-        "When escalating, other analysts will add progress updates and tasks completed to the action log",
+        "Comments are often used as a source of communication between analysts as during ticket escalation",
       ],
 
       img: email7,
@@ -103,7 +108,8 @@ const Emails = () => {
     {
       title: <h3 className="mail-h">#1: Take emails and organize inbox</h3>,
       tips: [
-        "Drag emails from ITS inbox into your personal inbox (Items Taken By...)",
+        "It is critical to continuously monitor this inbox throughout the day",
+        "Drag emails from the ITS inbox into your personal inbox (Items Taken By...)",
         "Keep inbox organized and mark ongoing emails with flags",
       ],
       bold: (
@@ -111,6 +117,7 @@ const Emails = () => {
           TIP: Challenge yourself and look for emails containing unique issues
         </b>
       ),
+      img: e5,
     },
     {
       title: (
@@ -119,27 +126,30 @@ const Emails = () => {
       tips: [
         "See above guide on ticket creation",
         "Access scripts, old tickets to brainstorm a list of possible solutions",
-        "Don't be afraid to ask for help if you cannot find a solution",
+        "Don't be afraid to ask your coworkers for help if you cannot find a solution",
       ],
-      bold: <b>STATUS: Mark ticket as "Work in Progress"</b>,
+      bold: <b>STATUS: Mark ticket as "Work in Progress" while brainstorming solutions</b>,
+      img: e4,
     },
     {
       title: <h3 className="mail-h">#3: Schedule and complete callback</h3>,
       tips: [
-        "Send email back to client asking for availability and contact info",
-        "Connect with client’s screen and attempt possible solutions (See escalation guide and escalate if appropriate)", 
+        "Send email back to client asking for availability and contact info (See image above for sample email)",
+        "Connect with client’s screen and attempt possible solutions (See escalation guide and escalate if appropriate)",
       ],
       bold: <b>STATUS: Mark ticket as "Waiting on Customer"</b>,
+      img: e3,
     },
     {
       title: <h3 className="mail-h">#4: Update and close ticket</h3>,
       tips: [
-        "Identify successful solution",
+        "Identify successful solution from you brainstorm",
         "Update ticket with contact info and asset tag number",
-        "Fill in resolution with successful solution and select resolution type",
+        "Fill in resolution box with successful solution and select resolution type",
         "Mark email in inbox with a checkmark",
       ],
       bold: <b>STATUS: Mark ticket as "Closed"</b>,
+      img: e6,
     },
   ];
 
@@ -175,24 +185,27 @@ const Emails = () => {
           Ticket Creation Guide <BiDetail />
         </h3>
         <Container className="mail-container">
-          {ticketGuide.map(({ title, tips, container, img, bold }, i) => (
-            <Row className="mail-row">
-              {title}
-              <div className="mail-img-div">
-                <img src={img} />
-              </div>
+          {ticketGuide.map(
+            ({ title, tips, container, img, bold, paragraph }, i) => (
+              <Row className="mail-row">
+                {title}
+                <div className="mail-img-div">
+                  <img src={img} />
+                </div>
 
-              <Col>
-                {bold}
-                <ul className="mail-ul">
-                  {tips.map((tip) => (
-                    <li className="mail-p">{tip}</li>
-                  ))}
-                </ul>
-              </Col>
-              {container}
-            </Row>
-          ))}
+                <Col>
+                  {bold}
+                  <p className="mail-p">{paragraph}</p>
+                  <ul className="mail-ul">
+                    {tips.map((tip) => (
+                      <li className="mail-p">{tip}</li>
+                    ))}
+                  </ul>
+                </Col>
+                {container}
+              </Row>
+            )
+          )}
         </Container>
       </div>
 
@@ -221,9 +234,12 @@ const Emails = () => {
           Emails Guide <BiDetail />
         </h3>
         <Container className="mail-container">
-          {mailGuide.map(({ title, tips, container, bold }, i) => (
+          {mailGuide.map(({ title, tips, container, bold, img }, i) => (
             <Row className="mail-row">
               {title}
+              <div className="mail-img-div">
+                <img src={img} />
+              </div>
               <Col>
                 <ul className="mail-ul">
                   {tips.map((tip) => (
