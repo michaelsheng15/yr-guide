@@ -46,9 +46,21 @@ const Tools = () => {
       button2: "Learn more",
     },
     {
-      title: "Dell Knowledge Base",
+      title: "Cisco Unity",
       description:
+        "Data base of administrative tools for Cisco Softphones. Often used in voicemail password resets.",
+
+      button: "Learn more",
+      
+      title2: "Dell Knowledge Base",
+      description2:
         "A database of technical support articles and guides for Dell computers, mainly used in driver installation and updates.",
+      button2: "Learn more",
+    },
+    {
+      title: "Device Manager",
+      description:
+        "A internal tool used to view status of a machine's drivers. Very useful is diagnosing and fixing hardware issues.",
       button: "Learn more",
 
       title2: "GoToSupport",
@@ -162,7 +174,7 @@ const Tools = () => {
       <Container className="tools-container">
         <div>
           <h3 className="tools-sub-header">
-            IT Exclusive Tools <BiCube />
+            ITS Tools <BiCube />
           </h3>
 
           {IT.map((e) => (
