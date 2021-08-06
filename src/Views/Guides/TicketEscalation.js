@@ -28,9 +28,9 @@ const TicketEscalation = () => {
       ),
       points: [
         "Record client's contact information (Phone/Extension, Asset Tag)",
-        "Enter a deatiled description of clients problem and all completed troubleshooting in the analyst comments",
+        "Enter a detailed description of clients problem and all completed troubleshooting in the analyst comments",
         "Access scripts, old tickets or the provided escalation map to decide the department to escalate to",
-        "Leave the 'Assigned to' box blank as the department will assign to a specific analyst.",
+        "Leave the 'Assigned to' box blank as the department will assign to a analyst.",
         "Mark ticket as 'Assigned'",
       ],
       container: (
@@ -58,7 +58,6 @@ const TicketEscalation = () => {
       points: [
         "Check up on ticket to make sure it has been acknowledged",
         "Follow-up with client on resolved tickets",
-        "Stay updated with tickets assigned to you",
         "Escalated tickets that have been resolved may be assigned back to you for you to follow-up and close",
       ],
       container: undefined,
@@ -80,8 +79,8 @@ const TicketEscalation = () => {
             <div className="esc-text">
               <p className="esc-p">
                 Ticket escalation is a cross-departmental process that involves
-                sending certain tickets to their appropriate departments for
-                further support. As a support analyst, you are the first level
+                sending tickets to their appropriate departments for
+                further support. As a support analyst 1, you are the first level
                 of support for all incoming issues and it is your responsibility
                 to solve or filter those tickets to the correct department.
                 While it may seem easy to simply escalate any and all issues

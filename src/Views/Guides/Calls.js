@@ -13,9 +13,9 @@ const Calls = () => {
       title: "#1: Cisco Finesse and Queue Status",
       tips: [
         "Set yourself on ready and calls will begin appearing once it is your turn",
-        "Track your daily calls, time on ready and time spent on not ready",
         "Monday and Tuesday are busy days so you should aim to always be on ready unless completing callbacks",
-        "When you receive a call, you will see a prompt in the bottom right corner"
+        "When you receive a call, you will see a prompt in the bottom right corner and you can press on it to answer",
+        "Track your daily calls, time on ready and time spent on not ready to get a sense of your progress throughout the term",
       ],
     },
     {
@@ -29,8 +29,8 @@ const Calls = () => {
     {
       title: "#3: Essential Follow-Up Questions",
       tips: [
-        "It is important to ask questions to gain a better understanding of the issue",
-        "Often time, the answer to some of these questions can lead your straight to a solution",
+        "It is important to ask questions to gain a better understanding of the issue and to correctly fill out the ticket",
+        "Often times, the answer to some of these questions can lead your straight to a solution",
         "Refer to list of essential questions that you should ask in every call",
       ],
       container: (
@@ -51,9 +51,9 @@ const Calls = () => {
     {
       title: "#4: Solution Brainstorm and Connecting with Client",
       tips: [
-        "Often times, it is helpful to first connect with the client to experience to issue before brainstorming solutions",
-        "Depending on the complexity of the issue, you can put the client on hold or inform the client to give you a moment for you to brainstorm solutions",
-        "Look through old tickets and scripts to find possible solutions and ask for help if you cannot find any possible solutions",
+        "It is helpful to first connect with the client to experience the issue before brainstorming solutions to gain some first hand experience",
+        "Depending on the complexity of the issue, you can put the client on hold or inform the client to give you a moment for you to search your resources for solutions",
+        "Look through old tickets and scripts to find possible solutions, refer to teh general troubleshooting steps provided and ask for help if you cannot find any solutions",
       ],
       container: (
         <Col sm={5}>
@@ -70,15 +70,15 @@ const Calls = () => {
       title: "#5: Execute Possible Solutions",
       tips: [
         "Take your time and thoroughly test each solution",
-        "Once a solution seems to be successful, run some tests to ensure completion (Ex. restart application, sign out and sign back in, restart computer))",
+        "Once a solution seems to be successful, run some tests to ensure completion (Ex. restart application, sign out and sign back in, restart computer)",
       ],
     },
     {
       title: "Successful?",
       tips: [
         "End call with a polite farewell",
-        "Update ticket with successful solution and close ticket",
-        "If unable to complete tests, leave ticket open and follow-up with client"
+        "Update ticket with successful solution, client information and determine the appropriate resolution catergory to close ticket",
+        "If you were unable to complete any follow-up tests after testing each solution, leave the ticket open and follow-up with client",
       ],
     },
     {
@@ -109,7 +109,8 @@ const Calls = () => {
                 The IT phone queue is the primary form of communication between
                 IT and York Region employees. Queue calls are generally much
                 more urgent than emails so monitoring the queue and taking calls
-                efficiently is a priority. Every call will contain unique variables however there is a common foundation that every call follows.
+                efficiently is a priority. Every call will contain unique
+                variables however there is a procedure common across most calls.
               </p>
             </div>
             <div className="calls-tip-card">
@@ -118,30 +119,30 @@ const Calls = () => {
               </h6>
               <p className="esc-p">
                 <strong>Be respectful and professional:</strong> <br />
-                Reagrdless of how you are being treated by a client, always be
-                polite, respectful and professional.
+                It is common for clients to be frustrated so regardless of how you are being treated by a client, always be polite, respectful and professional. 
               </p>
               <p className="esc-p">
                 <strong> Take your time and stay calm:</strong> <br />
                 Calls can take anywhere from 5-30 minutes. Take your time to
-                thoroughly attempt solutions and remain call to improve your
-                efficiency and adaptability.
+                thoroughly troubleshoot and stay relaxed and adaptable to new issues.
               </p>
               <p className="esc-p">
                 <strong>Inform client before closing apps/restarting:</strong>{" "}
                 <br />
-                Ending tasks and restarts are very common. Remember to inform
+                Ending tasks and restarting applications is very common. Remember to inform
                 clients beforehand so they can save their work/files.
               </p>
               <p className="esc-p">
                 <strong>Don't be afraid to ask for help:</strong> <br />
                 As a new employee, getting stuck during calls is very common. Do
-                not be afriad to ask your workers or follow co-op students for
+                not be afriad to ask your workers or fellow co-op students for
                 help.
               </p>
               <p className="esc-p">
                 <strong>Be aware of phone queue status:</strong> <br />
-                After finishing a call, you have 60 seconds to finish up your work before you go on "Ready" again. If you need more time, put yourself on "Not Ready".
+                After finishing a call, you have 60 seconds to finish up your
+                work before you go on "Ready" again. If you need more time, put
+                yourself on "Not Ready" to avoid entering the queue unprepared.
               </p>
             </div>
           </Col>
@@ -150,7 +151,7 @@ const Calls = () => {
 
       <div className="calls-guide-back">
         <h3 className="calls-sub-header">
-          Phone Call Guide <BiDetail />
+          Phone Call Guide and Notes <BiDetail />
         </h3>
         <Container className="calls-container">
           {callsGuide.map(({ title, tips, script, container }) => (

@@ -21,7 +21,7 @@ const Issues = () => {
       issueTitle2: "Unable to open/check-in eDOCS documents",
 
       solution2: [
-        "Close of office applications and eDOCS DM from task manager",
+        "Close of O365 applications and eDOCS DM from task manager",
         "Go to file ___",
         "Run dmreset.bat",
         "Open eDOCS from desktop icon to create local file",
@@ -36,7 +36,7 @@ const Issues = () => {
         "When adding printer, select “Printer not listed” and search by printer number",
         "Enter asset tag of printer",
         "Connect to printer",
-        "Print test page from Settings",
+        "Print test page from Settings > Devices > Printers",
       ],
 
       issueTitle2: "FTP service Java required/blocked",
@@ -62,7 +62,7 @@ const Issues = () => {
 
       solution2: [
         "Open to Command Prompt",
-        "Enter command 'domain flushdns",
+        "Enter command 'domain /flushdns",
         "Restart computer and connect to VPN",
       ],
     },
@@ -84,7 +84,7 @@ const Issues = () => {
       ],
     },
     {
-      issueTitle: "Laptop unable to connect to network",
+      issueTitle: "Outlook not connecting to exchange server",
 
       solution: [
         "End Outlook task from task manager",
@@ -92,7 +92,7 @@ const Issues = () => {
         "Restart machine",
       ],
 
-      issueTitle2: "Outlook not connecting to exchange server",
+      issueTitle2: "Laptop unable to connect to network",
 
       solution2: [
         "Ask user to use a wired connection or hotspot",

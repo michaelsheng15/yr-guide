@@ -31,7 +31,7 @@ const Tips = () => {
     {
       title: "#3: Outlook Automation and Organization",
       paragraph:
-        "Prepare for your Outlook to get super messy. From client emails, York Region communications and service manager notifications, you will receive 20-60 emails everyday. Adding rules is a great way to automatically filter your inbox. Personally, I filter all York Beat and York Communication emails into 1 folder, and all service manager notifications into another folder.",
+        "Prepare for your Outlook to get super messy. From client emails, York Region communications and service manager notifications, you will receive dozens of emails everyday. Adding rules is a great way to automatically filter your inbox. Personally, I filter all York Beat and York Communication emails into 1 folder, and all service manager notifications into another folder.",
       icon: <SiMicrosoftoutlook className="ig" />,
     },
     {
@@ -43,7 +43,7 @@ const Tips = () => {
     {
       title: "#5: Weekly Call Goals",
       paragraph:
-        "Taking calls is a scary part of the job, however it is essential to quickly adapt and become comfortable with this responsibility. Personally, I set weekly call goals where everyday, I want to take a minimum of x amount of calls. After every week, increase your minimum by 3-5 and you’ll feel comfortable in no time. As introvert, it's important to test your limits and challenge yourself.",
+        "Taking calls is a scary part of the job, however it is essential to quickly adapt and become comfortable with this responsibility. Personally, I set weekly call goals where everyday I want to take a minimum of x amount of calls. After every week, increase your minimum by 3-5 and you’ll feel comfortable in no time. It's important to test your limits and challenge yourself.",
       icon: <FiFlag className="ig" />,
     },
   ];
@@ -53,7 +53,7 @@ const Tips = () => {
       <NavCard />
       <div className="tips-header">
         <h1>Helpful Tips</h1>
-        <p>A collection of tips to boost your productivity and efficiency.</p>
+        <p>A collection of tips from my personal experience.</p>
       </div>
 
       {e.map((e) => (

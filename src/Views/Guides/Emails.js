@@ -10,6 +10,7 @@ import email3 from "../../img/e3.png";
 import email4 from "../../img/e4.png";
 import email6 from "../../img/email6.png";
 import email7 from "../../img/e7.png";
+import email8 from "../../img/re.png";
 
 import e6 from "../../img/6.png";
 import e4 from "../../img/4.png";
@@ -22,7 +23,7 @@ const Emails = () => {
       title: <h3 className="mail-h">Section 1: Affected User and Title </h3>,
       tips: [
         "Format is lastname, firstname (username)",
-        "Stick to the title format [Asset Tag] - [Affected App] - [Problem Statement/Error Message] - [Contact Information]",
+        "Stick to the title format [Asset Tag] - [Affected App] - [Problem Statement/Error Message] - [Callback #]",
       ],
       img: email1,
     },
@@ -30,9 +31,9 @@ const Emails = () => {
       title: <h3 className="mail-h">Section 2: Description</h3>,
       tips: [
         "The description should be treated as your personal notepad and jot down any important notes, contact information or answers to your follow-up questions",
-        "Access resources and brainstorm possible solution",
-        "After testing each solution, mark each solution with result (successful/unsuccessful)",
-        "If you are creating a ticket for an email, copy and paste the email message between quotes",
+        "Access resources and make a note of all possible solutions in this box",
+        "Preparing the steps you plan to take keeps you organized and make callbacks more efficient",
+        "After testing each possible solution, mark each with the result (successful/unsuccessful)",
       ],
 
       img: email2,
@@ -52,7 +53,7 @@ const Emails = () => {
       container: (
         <Col>
           <div className="mail-card">
-            <h6 className="card-h">Common Departments</h6>
+            <h6 className="card-h">Some Common Departments</h6>
             <p className="mail-p">
               <b>SC_ServiceDesk2ndLevel:</b> Hardware and OS
             </p>
@@ -74,7 +75,7 @@ const Emails = () => {
     {
       title: <h3 className="mail-h">Section 4: Affected Items and Comments</h3>,
       tips: [
-        "Enter the asset tag number of the affected device(s)",
+        "Enter the asset tag number of the affected device(s) which can be found on the blue sticker marked 'Department ID'",
         "General hardware such as docking stations and monitors can be found under the category 'Hardware Asset'",
         "Printers are found under the 'Printer' category",
       ],
@@ -86,15 +87,26 @@ const Emails = () => {
         <h3 className="mail-h">Section 5: Analyst Comments and Action Log</h3>
       ),
       tips: [
-        "Any comments you add will be sent to the affected user",
+        "Any comments you add will be sent to the affected user unless the private box is checked",
         "Use this section to provide progress updates (ex. 'Sent client callback email' or 'Scheduled callback for...')",
-        "Comments are often used as a source of communication between analysts as during ticket escalation",
+        "Comments are often used as a source of communication between other analysts as during ticket escalation",
+        "Clients may also communicate wiht analysts through comments",
+        "In closed tickets, the resolution will appear in analyst comments",
       ],
 
       img: email7,
     },
     {
-      title: <h3 className="mail-h">Section 5: Resolution</h3>,
+      title: <h3 className="mail-h">Section 6: Related Items</h3>,
+      tips: [
+        "Any relevant images, screenshots or emails can be attached under the 'Attached Files' section",
+        "If there are any related past IR tickets that have affected the same user, they can be added to the 'Work Items' section",
+      ],
+      container: undefined,
+      img: email8,
+    },
+    {
+      title: <h3 className="mail-h">Section 7: Resolution</h3>,
       tips: [
         "Resolution category will only be accessible after closing the ticket",
         "Determine the appropriate resolution category and input solution in resolution box",
@@ -109,8 +121,9 @@ const Emails = () => {
       title: <h3 className="mail-h">#1: Take emails and organize inbox</h3>,
       tips: [
         "It is critical to continuously monitor this inbox throughout the day",
+        "Remember to mark emails you have read but not taken as unread for other analysts to see",
         "Drag emails from the ITS inbox into your personal inbox (Items Taken By...)",
-        "Keep inbox organized and mark ongoing emails with flags",
+        "Keep personal inbox organized and mark ongoing emails with flags",
       ],
       bold: (
         <b>
@@ -125,10 +138,17 @@ const Emails = () => {
       ),
       tips: [
         "See above guide on ticket creation",
+        "Copy and paste the email message and enter it between quotes",
+        "Save and name a copy of the email as the ticket number and attach it in 'Attached Files'",
         "Access scripts, old tickets to brainstorm a list of possible solutions",
         "Don't be afraid to ask your coworkers for help if you cannot find a solution",
       ],
-      bold: <b>STATUS: Mark ticket as "Work in Progress" while brainstorming solutions</b>,
+      bold: (
+        <b>
+          STATUS: Mark ticket as "Work in Progress" while brainstorming
+          solutions
+        </b>
+      ),
       img: e4,
     },
     {
@@ -145,8 +165,8 @@ const Emails = () => {
       tips: [
         "Identify successful solution from you brainstorm",
         "Update ticket with contact info and asset tag number",
-        "Fill in resolution box with successful solution and select resolution type",
-        "Mark email in inbox with a checkmark",
+        "Fill in resolution box with successful solution and select appropriate resolution type",
+        "Mark completed emails in personal inbox with a checkmark",
       ],
       bold: <b>STATUS: Mark ticket as "Closed"</b>,
       img: e6,
@@ -169,12 +189,12 @@ const Emails = () => {
           <Col>
             <div>
               <p className="mail-p">
-                A ticket is a capsule of information regarding a client's issue
-                and it is a way to track critical information and progress.
-                Creating tickets is an essential part of your responsibilities
-                and provided is a guide outlining each different section of a
-                ticket, the information it should include and helpful tips to
-                create effective tickets.
+                A ticket is a capsule of information containing an overview of a
+                clients issue. It is also a way of tracking progress and
+                collborating with other analysts. Creating tickets is an
+                essential part of your responsibilities and provided is a guide
+                outlining each different section of a ticket, the information it
+                should include and helpful tips to create effective tickets.
               </p>
             </div>
           </Col>
@@ -218,11 +238,11 @@ const Emails = () => {
           <Col>
             <div>
               <p className="mail-p">
-                The ITS inbox is a shared inbox across the entire ITS team where
+                The ITS inbox is a shared inbox across the entire team where
                 dozens of issues and requests appear. As a support analyst,
                 monitoring and taking emails is a key responsibility. While each
-                email will be different, provided is an algorithmic guide
-                developed from my own experience.
+                email will be different, provided are some of my personal notes
+                that I found to be very helpful.
               </p>
             </div>
           </Col>
